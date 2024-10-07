@@ -6,14 +6,12 @@ function Header() {
   return (
     <div className="header">
       <div className="header__left">
-        <div>
-          <Link>LI</Link>
-          <Link>GIT</Link>
-          <Link>EM</Link>
+        <div className="header__socials">
+          <Link className="header__link">LI</Link>
+          <Link className="header__link">GIT</Link>
+          <Link className="header__link">EM</Link>
         </div>
-        <div>
-          <img src="" alt="" />
-        </div>
+        <div className="header__line"></div>
       </div>
       <div className="header__right">
         <p>©/2024</p>

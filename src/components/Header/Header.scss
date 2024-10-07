@@ -1,0 +1,30 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    font-size: 12px;
+    padding: 0 15px;
+
+    &:hover {
+      text-decoration: overline;
+      color: $primary-color-white;
+    }
+  }
+
+  &__line {
+    border: 1px solid $primary-color-white;
+    height: 2px;
+    width: 60px;
+    margin-left: 10px;
+  }
+}

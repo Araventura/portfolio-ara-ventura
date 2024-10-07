@@ -1,0 +1,32 @@
+@use "./styles/fonts" as *;
+@use "./styles/mixins" as *;
+@use "./styles/variables" as *;
+
+body {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $primary-color-background;
+  color: $primary-color-white;
+  padding: 16px;
+}
+
+ul {
+  list-style: none;
+  padding-left: none;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color-white;
+}
+
+a,
+button {
+  cursor: pointer;
+}
