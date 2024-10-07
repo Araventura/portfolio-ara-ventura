@@ -14,7 +14,7 @@ function Header() {
         <div className="header__line"></div>
       </div>
       <div className="header__right">
-        <p>©/2024</p>
+        <p className="header__year">AV ©/2024</p>
       </div>
     </div>
   );

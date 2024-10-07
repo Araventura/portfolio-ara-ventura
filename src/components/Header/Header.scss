@@ -27,4 +27,15 @@
     width: 60px;
     margin-left: 10px;
   }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__year {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 4px;
+  }
 }
