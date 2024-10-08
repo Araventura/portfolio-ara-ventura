@@ -6,9 +6,21 @@
   justify-content: space-between;
   margin: 16px 0;
 
+  @include tablet {
+    transform: rotate(-90deg);
+    flex-direction: row-reverse;
+    position: relative;
+    bottom: -330px;
+    left: -360px;
+  }
+
   &__left {
     display: flex;
     align-items: center;
+
+    @include tablet {
+      flex-direction: row-reverse;
+    }
   }
 
   &__link {
