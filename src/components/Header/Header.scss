@@ -14,6 +14,12 @@
     left: -360px;
   }
 
+  @include desktop {
+    max-width: 800px;
+    bottom: -360px;
+    left: -380px;
+  }
+
   &__left {
     display: flex;
     align-items: center;

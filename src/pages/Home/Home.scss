@@ -12,10 +12,23 @@
     padding-left: 70px;
   }
 
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+
   &__top {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include desktop {
+      justify-content: end;
+      padding-left: 100px;
+      padding-right: 30px;
+      padding-bottom: 45px;
+    }
   }
 
   &__title {
@@ -24,10 +37,15 @@
     @include tablet {
       font-size: 16px;
     }
+
+    @include desktop {
+      font-weight: 600;
+    }
   }
 
   &__description {
     font-size: 12px;
+    opacity: 0.7;
 
     @include tablet {
       font-size: 14px;
@@ -36,6 +54,7 @@
 
   &__open {
     font-size: 12px;
+    opacity: 0.7;
 
     @include tablet {
       font-size: 14px;
@@ -51,14 +70,21 @@
     &-text {
       font-size: 80px;
       font-family: "Libre";
+      opacity: 0.1;
+
       @include tablet {
         font-size: 100px;
+      }
+
+      @include desktop {
+        font-size: 140px;
       }
 
       &:hover {
         font-style: italic;
         text-decoration: none;
         color: $primary-color-white;
+        opacity: 1;
       }
     }
   }
