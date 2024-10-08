@@ -7,9 +7,23 @@ function Header() {
     <div className="header">
       <div className="header__left">
         <div className="header__socials">
-          <Link className="header__link">LI</Link>
-          <Link className="header__link">GIT</Link>
-          <Link className="header__link">EM</Link>
+          <Link
+            to="https://www.linkedin.com/in/ara-ventura/"
+            className="header__link"
+          >
+            LI
+          </Link>
+          <Link to="https://github.com/Araventura" className="header__link">
+            GIT
+          </Link>
+          <Link
+            onClick={() => {
+              window.location = `mailto:ara.venturafitch@gmail.com`;
+            }}
+            className="header__link"
+          >
+            EM
+          </Link>
         </div>
         <div className="header__line"></div>
       </div>
