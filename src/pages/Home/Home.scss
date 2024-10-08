@@ -70,6 +70,7 @@
     &-text {
       font-size: 80px;
       font-family: "Libre";
+      transition: 0.5s;
       opacity: 0.1;
 
       @include tablet {
@@ -81,7 +82,7 @@
       }
 
       &:hover {
-        font-style: italic;
+        // font-style: italic;
         text-decoration: none;
         color: $primary-color-white;
         opacity: 1;
