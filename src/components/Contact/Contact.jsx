@@ -11,7 +11,14 @@ function Contact() {
         Are looking to collaborate or hire me? Get in touch.
       </h4>
       <p className="contact__email">
-        Email: <Link>araventura.contact@gmail.com</Link>
+        Email:{" "}
+        <Link
+          onClick={() => {
+            window.location = `mailto:araventura-contact@gmail.com`;
+          }}
+        >
+          araventura.contact@gmail.com
+        </Link>
       </p>
       <p className="contact__socials">
         On the Internet: <Link>LinkedIn</Link> / <Link>GitHub</Link>
