@@ -15,9 +15,15 @@ function Home() {
         </h4>
       </div>
       <div className="home__bottom">
-        <Link className="home__bottom-text">WORK</Link>
-        <Link className="home__bottom-text">ABOUT</Link>
-        <Link className="home__bottom-text">CONTACT</Link>
+        <Link to={"/work"} className="home__bottom-text">
+          WORK
+        </Link>
+        <Link to={"/about"} className="home__bottom-text">
+          ABOUT
+        </Link>
+        <Link to={"/contact"} className="home__bottom-text">
+          CONTACT
+        </Link>
       </div>
     </div>
   );

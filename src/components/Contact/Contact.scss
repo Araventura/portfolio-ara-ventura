@@ -1,0 +1,38 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/fonts" as *;
+
+.contact {
+  padding: 100px 32px;
+
+  &__title {
+    font-family: "Libre";
+    font-size: 80px;
+  }
+
+  &__subtitle {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  &__email {
+    font-size: 13px;
+    margin-bottom: 0;
+
+    & :hover {
+      text-decoration: none;
+      color: $primary-color-white;
+      opacity: 0.5;
+    }
+  }
+
+  &__socials {
+    font-size: 13px;
+
+    & :hover {
+      text-decoration: none;
+      color: $primary-color-white;
+      opacity: 0.5;
+    }
+  }
+}
