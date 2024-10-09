@@ -1,0 +1,33 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/fonts" as *;
+
+.about {
+  padding: 35px 36px;
+
+  &__title {
+    font-family: "Libre";
+    font-size: 80px;
+    padding-bottom: 16px;
+  }
+
+  &__subtitle {
+    font-family: "Libre";
+    font-size: 30px;
+    padding-bottom: 16px;
+  }
+
+  &__tech {
+    font-family: "Libre";
+    font-size: 10px;
+    padding-bottom: 16px;
+    letter-spacing: 2px;
+  }
+
+  &__text {
+    opacity: 0.8;
+    font-size: 12px;
+    padding-bottom: 16px;
+    letter-spacing: 1px;
+  }
+}
