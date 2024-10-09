@@ -39,8 +39,17 @@ button {
 .back {
   font-size: 12px;
   transition: 0.3s;
+
+  @include tablet {
+    font-size: 14px;
+  }
+
   & img {
     width: 20px;
+
+    @include tablet {
+      width: 25px;
+    }
   }
 
   &:hover {

@@ -21,7 +21,9 @@ function Contact() {
         </Link>
       </p>
       <p className="contact__socials">
-        On the Internet: <Link>LinkedIn</Link> / <Link>GitHub</Link>
+        On the Internet:{" "}
+        <Link to="https://www.linkedin.com/in/ara-ventura/">LinkedIn</Link> /{" "}
+        <Link to="https://github.com/Araventura">GitHub</Link>
       </p>
       <Link to={"/"} className="back">
         <img src={Arrow} alt="left arrow" /> back

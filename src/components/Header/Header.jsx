@@ -18,7 +18,7 @@ function Header() {
           </Link>
           <Link
             onClick={() => {
-              window.location = `mailto:ara.venturafitch@gmail.com`;
+              window.location = `mailto:araventura-contact@gmail.com`;
             }}
             className="header__link"
           >
