@@ -5,10 +5,12 @@ import { Link } from "react-router-dom";
 function About() {
   return (
     <div className="about">
-      <h1 className="about__title">About</h1>
-      <h2 className="about__subtitle">
-        I'm Ara. A software engineer, maker and problem solver.
-      </h2>
+      <div className="about__text-top">
+        <h1 className="about__title">About</h1>
+        <h2 className="about__subtitle">
+          I'm Ara. A software engineer, maker and problem solver.
+        </h2>
+      </div>
       <h4 className="about__tech">
         HTML / CSS / SCSS / Sass / JavaScript / Node / React / Express / MySQL /
         Agile Development / DOM / API / Web APIs / User Authentication / OAuth /
