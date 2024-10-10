@@ -58,5 +58,27 @@
       font-size: 14px;
       padding-bottom: 8px;
     }
+
+    &-top div {
+      animation: showTopText 1s;
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+      transform: translate(0, 0);
+    }
+
+    &-bottom div {
+      animation: showBottomText 0.5s;
+      animation-delay: 1.75s;
+      animation-fill-mode: forwards;
+      transform: translate(0, 0);
+    }
+
+    &-top {
+      overflow: hidden;
+    }
+
+    &-bottom {
+      overflow: hidden;
+    }
   }
 }
