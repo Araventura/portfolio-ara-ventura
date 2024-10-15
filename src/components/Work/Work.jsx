@@ -1,11 +1,16 @@
 import React from "react";
 import "./Work.scss";
+import { Link } from "react-router-dom";
+import Arrow from "../../assets/icons/left-arrow.png";
 import videos from "../../videos/videos.json";
 
 function Work() {
   console.log(videos);
   return (
     <div className="work">
+      <Link to={"/"} className="back">
+        <img src={Arrow} alt="left arrow" /> back
+      </Link>
       <h4 className="work__title">WORK</h4>
       <p className="work__description">
         This is a showcase of my work. The world is constantly evolving and so
@@ -22,6 +27,9 @@ function Work() {
           </div>
         </div>
       </div>
+      <Link to={"/contact"}>
+        <button>Contact Me</button>
+      </Link>
     </div>
   );
 }
