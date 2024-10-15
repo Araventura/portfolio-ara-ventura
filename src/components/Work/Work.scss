@@ -1,3 +1,29 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 @use "../../styles/fonts" as *;
+
+.work {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 80px;
+    padding: 26px 0;
+    margin-bottom: 0;
+    font-family: "Libre";
+  }
+
+  &__description {
+    max-width: 800px;
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 10px;
+  }
+}

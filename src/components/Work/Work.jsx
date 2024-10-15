@@ -11,10 +11,10 @@ function Work() {
       <Link to={"/"} className="back">
         <img src={Arrow} alt="left arrow" /> back
       </Link>
-      <h4 className="work__title">WORK</h4>
+      <h2 className="work__title">WORK</h2>
       <p className="work__description">
         This is a showcase of my work. The world is constantly evolving and so
-        am I. I'm still learning and gaining new skills everyday
+        am I. I'm still learning and gaining new skills everyday.
       </p>
       <div className="cards">
         <div className="card">
