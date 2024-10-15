@@ -1,6 +1,6 @@
 import React from "react";
 import "./Work.scss";
-
+import videos from "../../videos/videos.json";
 function Work() {
   return (
     <div className="work">
