@@ -26,4 +26,13 @@
     max-width: 600px;
     gap: 10px;
   }
+
+  .card {
+    margin-bottom: 16px;
+
+    &__video {
+      width: 419px;
+      height: auto;
+    }
+  }
 }

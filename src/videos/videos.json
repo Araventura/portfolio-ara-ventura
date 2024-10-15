@@ -3,71 +3,71 @@
     "id": 1,
     "thumbnail": 2,
     "video": 3,
-    "videoTitle": "Denta Shift, Capstone Project",
-    "videoDate": "September 2024",
-    "videoDescription": "A Full Stack application using React, Node.js, Express, MySQL for the front-end and back-end. A web app created for dental professionals and dental offices to find each other."
+    "title": "Denta Shift, Capstone Project",
+    "date": "September 2024",
+    "description": "A Full Stack application using React, Node.js, Express, MySQL for the front-end and back-end. A web app created for dental professionals and dental offices to find each other."
   },
 
   {
     "id": 2,
     "thumbnail": 2,
     "video": 3,
-    "videoTitle": "Industry Hackathon - Winning Project",
-    "videoDate": "September 2024",
-    "videoDescription": "Front-end lead of a team of 4. A 24 hour hackathon sponsored by Telus with the aim of tackling the theme: Consumers are experiencing option paralysis. The solution: a feature with Artificial Intelligence that provides a list of shows that you may like based on an entry and where you can find them."
+    "title": "Industry Hackathon - Winning Project",
+    "date": "September 2024",
+    "description": "Front-end lead of a team of 4. A 24 hour hackathon sponsored by Telus with the aim of tackling the theme: Consumers are experiencing option paralysis. The solution: a feature with Artificial Intelligence that provides a list of shows that you may like based on an entry and where you can find them."
   },
 
   {
     "id": 3,
     "thumbnail": 2,
     "video": 3,
-    "videoTitle": "Instock",
-    "videoDate": "September 2024",
-    "videoDescription": "An Inventory Management website that was built in collaboration with three of my peers using all we learned and adding MySQL, Knex.js, Jira and Gitflow best practices."
+    "title": "Instock",
+    "date": "September 2024",
+    "description": "An Inventory Management website that was built in collaboration with three of my peers using all we learned and adding MySQL, Knex.js, Jira and Gitflow best practices."
   },
 
   {
     "id": 4,
     "thumbnail": 2,
     "video": 3,
-    "videoTitle": "Hackathon #2: Purely Chic",
-    "videoDate": "August 2024",
-    "videoDescription": "Lead of the front-end. Given 8 hours and a team of 3, were taked with building a full-stack application using React, Node.js and Express.js for the front-end and the back-end"
+    "title": "Hackathon #2: Purely Chic",
+    "date": "August 2024",
+    "description": "Lead of the front-end. Given 8 hours and a team of 3, were taked with building a full-stack application using React, Node.js and Express.js for the front-end and the back-end"
   },
 
   {
     "id": 5,
     "thumbnail": 2,
     "video": 3,
-    "videoTitle": "BrainFlix",
-    "videoDate": "August 2024",
-    "videoDescription": "Using React and Axios for the front-end nd Node.js with Express.js for the back-end I was able to build a full-stack application similar to YouTube."
+    "title": "BrainFlix",
+    "date": "August 2024",
+    "description": "Using React and Axios for the front-end nd Node.js with Express.js for the back-end I was able to build a full-stack application similar to YouTube."
   },
 
   {
     "id": 6,
     "thumbnail": 2,
     "video": 3,
-    "videoTitle": "Hackathon #1: Your fav quotes",
-    "videoDate": "August 2024",
-    "videoDescription": "Joining a team of 2, we were tasked with building a functioning application in 4 hours using HTML, CSS/Sass, JS for the front-end, and Axios to pull data from an external API."
+    "title": "Hackathon #1: Your fav quotes",
+    "date": "August 2024",
+    "description": "Joining a team of 2, we were tasked with building a functioning application in 4 hours using HTML, CSS/Sass, JS for the front-end, and Axios to pull data from an external API."
   },
 
   {
     "id": 7,
     "thumbnail": 2,
     "video": 3,
-    "videoTitle": "Band Site",
-    "videoDate": "August 2024",
-    "videoDescription": "A project with JS and axios to build a more interactive and dynamic page."
+    "title": "Band Site",
+    "date": "August 2024",
+    "description": "A project with JS and axios to build a more interactive and dynamic page."
   },
 
   {
     "id": 8,
     "thumbnail": 2,
     "video": 3,
-    "videoTitle": "Coffe Shop",
-    "videoDate": "July 2024",
-    "videoDescription": "Using HTML, CSS/Sass + BEM naming conventions, I created a coffee shop landing and menu page."
+    "title": "Coffe Shop",
+    "date": "July 2024",
+    "description": "Using HTML, CSS/Sass + BEM naming conventions, I created a coffee shop landing and menu page."
   }
 ]
