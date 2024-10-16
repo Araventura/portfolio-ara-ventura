@@ -1,7 +1,6 @@
 [
   {
     "id": 1,
-    "thumbnail": 2,
     "video": 3,
     "title": "Denta Shift, Capstone Project",
     "date": "September 2024",
@@ -10,7 +9,6 @@
 
   {
     "id": 2,
-    "thumbnail": 2,
     "video": 3,
     "title": "Industry Hackathon - Winning Project",
     "date": "September 2024",
@@ -19,7 +17,6 @@
 
   {
     "id": 3,
-    "thumbnail": 2,
     "video": 3,
     "title": "Instock",
     "date": "September 2024",
@@ -28,7 +25,6 @@
 
   {
     "id": 4,
-    "thumbnail": 2,
     "video": 3,
     "title": "Hackathon #2: Purely Chic",
     "date": "August 2024",
@@ -37,7 +33,6 @@
 
   {
     "id": 5,
-    "thumbnail": 2,
     "video": 3,
     "title": "BrainFlix",
     "date": "August 2024",
@@ -46,7 +41,6 @@
 
   {
     "id": 6,
-    "thumbnail": 2,
     "video": 3,
     "title": "Hackathon #1: Your fav quotes",
     "date": "August 2024",
@@ -55,7 +49,6 @@
 
   {
     "id": 7,
-    "thumbnail": 2,
     "video": 3,
     "title": "Band Site",
     "date": "August 2024",
@@ -64,7 +57,6 @@
 
   {
     "id": 8,
-    "thumbnail": 2,
     "video": 3,
     "title": "Coffe Shop",
     "date": "July 2024",
