@@ -17,16 +17,16 @@ function Work() {
         am I. I'm learning and gaining new skills everyday.
       </p>
       <div className="cards">
-        {videos.map(() => (
-          <div className="card">
+        {videos.map((project) => (
+          <div key={project.id} className="card">
             <div className="card__video">
               <img src="" alt="" className="thumbnail" />
               <video src=""></video>
             </div>
             <div className="card-info">
-              <h4 className="card__title">Card Title</h4>
-              <p className="card__year">Card Month/Year</p>
-              <p className="card__description">Card Description</p>
+              <h4 className="card__title">{project.title}</h4>
+              <p className="card__year">{project.date}</p>
+              <p className="card__description">{project.description}</p>
             </div>
           </div>
         ))}
