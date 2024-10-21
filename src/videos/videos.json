@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "video": 3,
+    "video": "../../assets/videos/1.mov",
     "title": "Denta Shift, Capstone Project",
     "date": "September 2024",
     "description": "A Full Stack application using React, Node.js, Express, MySQL for the front-end and back-end. A web app created for dental professionals and dental offices to find each other."
@@ -9,7 +9,7 @@
 
   {
     "id": 2,
-    "video": 3,
+    "video": "https://youtu.be/9tI_3O-zejQ",
     "title": "Industry Hackathon - Winning Project",
     "date": "September 2024",
     "description": "Front-end lead of a team of 4. A 24 hour hackathon sponsored by Telus with the aim of tackling the theme: Consumers are experiencing option paralysis. The solution: a feature with Artificial Intelligence that provides a list of shows that you may like based on an entry and where you can find them."
@@ -17,7 +17,7 @@
 
   {
     "id": 3,
-    "video": 3,
+    "video": "https://youtu.be/G_Asx82eoXk",
     "title": "Instock",
     "date": "September 2024",
     "description": "An Inventory Management website that was built in collaboration with three of my peers using all we learned and adding MySQL, Knex.js, Jira and Gitflow best practices."
@@ -25,7 +25,7 @@
 
   {
     "id": 4,
-    "video": 3,
+    "video": "https://youtu.be/xWR1yNlRK6g",
     "title": "Hackathon #2: Purely Chic",
     "date": "August 2024",
     "description": "Lead of the front-end. Given 8 hours and a team of 3, were taked with building a full-stack application using React, Node.js and Express.js for the front-end and the back-end"
@@ -41,7 +41,7 @@
 
   {
     "id": 6,
-    "video": 3,
+    "video": "https://youtube.com/shorts/WgS5hYXk3l0?feature=share",
     "title": "Hackathon #1: Your fav quotes",
     "date": "August 2024",
     "description": "Joining a team of 2, we were tasked with building a functioning application in 4 hours using HTML, CSS/Sass, JS for the front-end, and Axios to pull data from an external API."
@@ -49,7 +49,7 @@
 
   {
     "id": 7,
-    "video": 3,
+    "video": "https://www.youtube.com/watch?v=DVwX0u534gw",
     "title": "Band Site",
     "date": "August 2024",
     "description": "A project with JS and axios to build a more interactive and dynamic page."
@@ -57,8 +57,8 @@
 
   {
     "id": 8,
-    "video": 3,
-    "title": "Coffe Shop",
+    "video": "https://youtu.be/ZR7djBE--I8",
+    "title": "Coffee Shop",
     "date": "July 2024",
     "description": "Using HTML, CSS/Sass + BEM naming conventions, I created a coffee shop landing and menu page."
   }

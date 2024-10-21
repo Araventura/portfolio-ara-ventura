@@ -21,7 +21,7 @@ function Work() {
           <div key={project.id} className="card">
             <div className="card__video">
               <img src="" alt="" className="thumbnail" />
-              <video src=""></video>
+              <video src={project.video} autoPlay></video>
             </div>
             <div className="card-info">
               <h4 className="card__title">{project.title}</h4>
