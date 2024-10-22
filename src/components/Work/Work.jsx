@@ -21,7 +21,15 @@ function Work() {
           <div key={project.id} className="card">
             <div className="card__video">
               <img src="" alt="" className="thumbnail" />
-              <video src={project.video} autoPlay></video>
+              <iframe
+                className="video"
+                src={project.video}
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
             <div className="card-info">
               <h4 className="card__title">{project.title}</h4>
