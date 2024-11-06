@@ -61,7 +61,7 @@
     }
 
     &__video {
-      width: 419px;
+      width: auto;
       height: auto;
     }
 
@@ -89,7 +89,7 @@
 }
 
 .video {
-  width: 419px;
+  width: 309px;
   height: 315px;
 
   @include tablet {
