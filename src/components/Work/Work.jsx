@@ -26,7 +26,7 @@ function Work() {
                 src={project.video}
                 title="YouTube video player"
                 frameborder="0"
-                allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
