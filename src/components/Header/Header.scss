@@ -11,7 +11,8 @@
     flex-direction: row-reverse;
     position: relative;
     bottom: -330px;
-    left: -360px;
+    left: -380px;
+    max-width: 700px;
   }
 
   @include desktop {

@@ -91,4 +91,9 @@
 .video {
   width: 419px;
   height: 315px;
+
+  @include tablet {
+    width: 300px;
+    height: 270px;
+  }
 }
