@@ -1,0 +1,15 @@
+TODO :
+
+FIX --
+1. animation on  about section, should run smoothly
+2. 
+
+IMPROVE --
+1.
+2.
+
+CREATE --
+
+1.
+2.
+
