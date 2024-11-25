@@ -4,6 +4,7 @@
 
 .about {
   padding: 35px 36px;
+  max-width: 1500px;
 
   @include tablet {
     padding-left: 80px;
