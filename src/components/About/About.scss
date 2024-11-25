@@ -82,4 +82,12 @@
       overflow: hidden;
     }
   }
+
+  .news {
+    font-size: 14px;
+
+    @include desktop {
+      font-size: 16px;
+    }
+  }
 }

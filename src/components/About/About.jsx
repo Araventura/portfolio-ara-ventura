@@ -15,11 +15,18 @@ function About() {
       </div>
       <div className="about__text-bottom">
         <div>
+          <h3 className="about__tech news">
+            Exciting news! I recently earned a certification in Artificial
+            Intelligence (AIC™), where I learned how to solve complex problems
+            with AI tools.
+          </h3>
+
           <h4 className="about__tech">
             HTML / CSS / SCSS / Sass / JavaScript / Node / React / Express /
-            MySQL / Agile Development / DOM / API / Web APIs / User
-            Authentication / OAuth / Heroku / GitHub / Jest / REST APIs /
-            Node.js / Figma / Git / GitHub / WordPress
+            MySQL / Agile Development / DOM / API / Web APIs / AI APIs & Plugins
+            / User Authentication / OAuth / Heroku / GitHub / Jest / REST APIs /
+            Node.js / Figma / Git / GitHub / LLMs / NLP Techniques / Prompt
+            Engineering / WordPress
           </h4>
 
           <p className="about__text">
@@ -52,10 +59,9 @@ function About() {
           </p>
 
           <p className="about__text">
-            As I transition from dentistry to tech, I bring a meticulous eye for
-            detail and a passion for crafting beautiful and efficient solutions.
-            My journey has just begun, and I’m excited to see where this path
-            takes me.
+            I bring a meticulous eye for detail and a passion for crafting
+            beautiful and efficient solutions. My journey has just begun, and
+            I’m excited to see where this path takes me.
           </p>
 
           <Link to={"/contact"}>
