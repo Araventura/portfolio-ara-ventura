@@ -1,0 +1,92 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/fonts" as *;
+
+.home {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 15px 0;
+  max-width: 1700px;
+
+  @include tablet {
+    padding-top: 80px;
+    padding-left: 70px;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include desktop {
+      justify-content: end;
+      padding-left: 62px;
+      padding-right: 30px;
+      padding-bottom: 45px;
+    }
+  }
+
+  &__title {
+    font-size: 13px;
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include desktop {
+      font-weight: 600;
+    }
+  }
+
+  &__description {
+    font-size: 12px;
+    opacity: 0.7;
+
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+
+  &__open {
+    font-size: 12px;
+    opacity: 0.7;
+
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 32px;
+
+    &-text {
+      font-size: 55px;
+      font-family: "Libre";
+      transition: 0.5s;
+      opacity: 0.1;
+
+      @include tablet {
+        font-size: 100px;
+      }
+
+      @include desktop {
+        font-size: 140px;
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: $primary-color-white;
+        opacity: 1;
+      }
+    }
+  }
+}

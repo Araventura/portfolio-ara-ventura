@@ -1,0 +1,100 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/fonts" as *;
+
+.work {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    padding-left: 70px;
+  }
+
+  &__title {
+    font-size: 80px;
+    padding: 26px 0;
+    margin-bottom: 0;
+    font-family: "Libre";
+  }
+
+  &__description {
+    max-width: 800px;
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 10px;
+    margin-bottom: 16px;
+
+    @include tablet {
+      flex-direction: row;
+      max-width: fit-content;
+      flex-wrap: wrap;
+      max-width: 1240px;
+    }
+  }
+
+  .card {
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 309px;
+
+    @include tablet {
+      max-width: 300px;
+    }
+
+    &:hover {
+      background-color: rgb(0, 0, 0, 0);
+
+      & .card-info {
+        background-color: rgb(0, 0, 0, 0.3);
+      }
+    }
+
+    & h4,
+    p {
+      color: $primary-color-white;
+      opacity: 0.8;
+    }
+
+    &__video {
+      width: 309px;
+      height: auto;
+    }
+
+    &-info {
+      width: auto;
+      padding: 8px;
+    }
+
+    &__title {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    &__year {
+      font-size: 10px;
+      font-style: italic;
+      margin-bottom: 5px;
+    }
+
+    &__description {
+      font-size: 11px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.video {
+  width: 309px;
+  height: 315px;
+
+  @include tablet {
+    width: 300px;
+    height: 270px;
+  }
+}

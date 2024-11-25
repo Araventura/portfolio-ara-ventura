@@ -1,0 +1,69 @@
+@use "./styles/fonts" as *;
+@use "./styles/mixins" as *;
+@use "./styles/variables" as *;
+
+body {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $primary-color-background;
+  color: $primary-color-white;
+  padding: 16px;
+}
+
+ul {
+  list-style: none;
+  padding-left: none;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color-white;
+
+  &:hover {
+    text-decoration: none;
+    color: $primary-color-white;
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  border-radius: 16px;
+  width: 200px;
+  height: 40px;
+  background-color: $primary-color-white;
+
+  & a {
+    color: black;
+  }
+}
+.back {
+  font-size: 12px;
+  transition: 0.3s;
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  & img {
+    width: 20px;
+
+    @include tablet {
+      width: 25px;
+    }
+  }
+
+  &:hover {
+    font-weight: 600;
+  }
+}

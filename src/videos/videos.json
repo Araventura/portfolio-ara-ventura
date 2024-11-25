@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "video": "https://www.youtube.com/embed/zSL2YIOgj2c?si=tr6RCmq-psW5NiGx&autoplay=1&mute=1&loop=1&controls=0&color=white&modestbranding=0&rel=0&playsinline=1&enablejsapi=1&playlist=zSL2YIOgj2c",
+    "title": "Denta Shift, Capstone Project",
+    "date": "September 2024",
+    "description": "A Full Stack application using React, Node.js, Express, MySQL for the front-end and back-end. A web app created for dental professionals and dental offices to find each other."
+  },
+
+  {
+    "id": 2,
+    "video": "https://www.youtube.com/embed/9tI_3O-zejQ?si=y6iBK5hvtwcEHr7e&autoplay=1&mute=1&loop=1&controls=0&color=white&modestbranding=0&rel=0&playsinline=1&enablejsapi=1&playlist=9tI_3O-zejQ",
+    "title": "Industry Hackathon - Winning Project",
+    "date": "September 2024",
+    "description": "Front-end lead of a team of 4. A 24 hour hackathon sponsored by Telus with the aim of tackling the theme: Consumers are experiencing option paralysis. The solution: a feature with Artificial Intelligence that provides a list of shows that you may like based on an entry and where you can find them."
+  },
+
+  {
+    "id": 3,
+    "video": "https://www.youtube.com/embed/G_Asx82eoXk?si=qU_HlSLxCJ_4np6O&autoplay=1&mute=1&loop=1&controls=0&color=white&modestbranding=0&rel=0&playsinline=1&enablejsapi=1&playlist=G_Asx82eoXk",
+    "title": "Instock",
+    "date": "September 2024",
+    "description": "An Inventory Management website that was built in collaboration with three of my peers using all we learned and adding MySQL, Knex.js, Jira and Gitflow best practices."
+  },
+
+  {
+    "id": 4,
+    "video": "https://www.youtube.com/embed/xWR1yNlRK6g?si=tmfLL4M7DP6uYumR&autoplay=1&mute=1&loop=1&controls=0&color=white&modestbranding=0&rel=0&playsinline=1&enablejsapi=1&playlist=xWR1yNlRK6g",
+    "title": "Hackathon #2: Purely Chic",
+    "date": "August 2024",
+    "description": "Lead of the front-end. Given 8 hours and a team of 3, were taked with building a full-stack application using React, Node.js and Express.js for the front-end and the back-end"
+  },
+
+  {
+    "id": 5,
+    "video": 3,
+    "title": "BrainFlix",
+    "date": "August 2024",
+    "description": "Using React and Axios for the front-end nd Node.js with Express.js for the back-end I was able to build a full-stack application similar to YouTube."
+  },
+
+  {
+    "id": 6,
+    "video": "https://www.youtube.com/embed/a4O2IBna-aA?si=BukWUGyWf9AkqAI_&autoplay=1&mute=1&loop=1&controls=0&color=white&modestbranding=0&rel=0&playsinline=1&enablejsapi=1&playlist=a4O2IBna-aA",
+    "title": "Hackathon #1: Your fav quotes",
+    "date": "August 2024",
+    "description": "Joining a team of 2, we were tasked with building a functioning application in 4 hours using HTML, CSS/Sass, JS for the front-end, and Axios to pull data from an external API."
+  },
+
+  {
+    "id": 7,
+    "video": "https://www.youtube.com/watch?v=DVwX0u534gw&autoplay=1&mute=1&loop=1&controls=0&color=white&modestbranding=0&rel=0&playsinline=1&enablejsapi=1&playlist=zSL2YIOgj2c",
+    "title": "BandSite",
+    "date": "August 2024",
+    "description": "A project with JS and axios to build a more interactive and dynamic page."
+  },
+
+  {
+    "id": 8,
+    "video": "https://www.youtube.com/embed/ZR7djBE--I8?si=CdauLaxxR4ka9Sac&autoplay=1&mute=1&loop=1&controls=0&color=white&modestbranding=0&rel=0&playsinline=1&enablejsapi=1&playlist=ZR7djBE--I8",
+    "title": "Coffee Shop",
+    "date": "July 2024",
+    "description": "Using HTML, CSS/Sass + BEM naming conventions, I created a coffee shop landing and menu page."
+  }
+]

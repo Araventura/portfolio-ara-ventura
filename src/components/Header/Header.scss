@@ -1,0 +1,60 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+
+  @include tablet {
+    transform: rotate(-90deg);
+    flex-direction: row-reverse;
+    position: relative;
+    bottom: -330px;
+    left: -330px;
+    max-width: 700px;
+  }
+
+  @include desktop {
+    max-width: 800px;
+    bottom: -360px;
+    left: -380px;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    @include tablet {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__link {
+    font-size: 12px;
+    padding: 0 15px;
+
+    &:hover {
+      text-decoration: overline;
+      color: $primary-color-white;
+    }
+  }
+
+  &__line {
+    border: 1px solid $primary-color-white;
+    height: 2px;
+    width: 60px;
+    margin-left: 10px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__year {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 4px;
+  }
+}
