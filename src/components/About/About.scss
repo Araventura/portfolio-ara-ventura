@@ -62,14 +62,14 @@
 
     &-top div {
       animation: showTopText 1s;
-      animation-delay: 0.5s;
+      animation-delay: 0s;
       animation-fill-mode: forwards;
       transform: translate(0, 0);
     }
 
     &-bottom div {
-      animation: showBottomText 0.5s;
-      animation-delay: 1.75s;
+      animation: showBottomText 1s;
+      animation-delay: 0s;
       animation-fill-mode: forwards;
       transform: translate(0, 0);
     }
