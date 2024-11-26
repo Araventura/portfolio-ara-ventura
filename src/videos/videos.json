@@ -33,7 +33,7 @@
 
   {
     "id": 5,
-    "video": 3,
+    "video": "https://www.canva.com/design/DAGXiBG4UPA/qIkhuf-wc9aHT7Vno1Op9Q/watch?utm_content=DAGXiBG4UPA&utm_campaign=designshare&utm_medium=link&utm_source=editor",
     "title": "BrainFlix",
     "date": "August 2024",
     "description": "Using React and Axios for the front-end nd Node.js with Express.js for the back-end I was able to build a full-stack application similar to YouTube."
