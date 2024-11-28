@@ -87,6 +87,21 @@
       margin-bottom: 0;
     }
   }
+
+  .photo__carousel {
+    margin: 16px 0;
+    width: 309px;
+    max-width: 920px;
+
+    @include tablet {
+      margin-bottom: 18px;
+      width: 600px;
+    }
+
+    @include desktop {
+      width: 920px;
+    }
+  }
 }
 
 .video {

@@ -24,7 +24,7 @@ function Work() {
 
       <div
         id="carouselExampleIndicators"
-        className="carousel slide"
+        className="carousel slide photo__carousel"
         data-ride="carousel"
       >
         <ol className="carousel-indicators">
