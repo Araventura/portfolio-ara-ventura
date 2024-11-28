@@ -17,6 +17,7 @@ function Work() {
         am I. I'm learning and gaining new skills everyday.
       </p>
       <div className="cards">
+        {/* where potentially will go a carousel */}
         {videos.map((project) => (
           <div key={project.id} className="card">
             <div className="card__video">
