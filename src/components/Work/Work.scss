@@ -118,6 +118,6 @@
   margin-top: auto;
   background-color: black;
   @include tablet {
-    margin: 8px;
+    margin: auto 8px 8px;
   }
 }
