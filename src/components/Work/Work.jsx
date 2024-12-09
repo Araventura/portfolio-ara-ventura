@@ -47,13 +47,13 @@ function Work() {
             <img className="d-block w-100" src={aiThree} alt="Third slide" />
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src={aiFour} alt="Third slide" />
+            <img className="d-block w-100" src={aiFour} alt="Fourth slide" />
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src={aiFive} alt="Third slide" />
+            <img className="d-block w-100" src={aiFive} alt="Fifth slide" />
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src={aiSix} alt="Third slide" />
+            <img className="d-block w-100" src={aiSix} alt="Sixth slide" />
           </div>
         </div>
         <a
