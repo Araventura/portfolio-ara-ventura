@@ -89,7 +89,7 @@ function Work() {
           </div>
         </div>
         <button
-          class="carousel-control-prev"
+          class="carousel-control-prev carousel__button"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
@@ -98,7 +98,7 @@ function Work() {
           <span class="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next"
+          class="carousel-control-next carousel__button"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
