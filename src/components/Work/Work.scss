@@ -113,3 +113,11 @@
     height: 270px;
   }
 }
+
+.carousel__button {
+  margin-top: auto;
+  background-color: black;
+  @include tablet {
+    margin: 8px;
+  }
+}
