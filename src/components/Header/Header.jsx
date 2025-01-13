@@ -29,7 +29,7 @@ function Header() {
       </div>
       <div className="header__right">
         <Link to={"/"} className="header__year">
-          AV ©/2024
+          AV ©/2025
         </Link>
       </div>
     </div>
