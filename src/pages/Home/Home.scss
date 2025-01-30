@@ -89,4 +89,18 @@
       }
     }
   }
+
+  &__chatbot {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 16px;
+    opacity: 0.9;
+    transition: 0.3s;
+
+    &:hover {
+      font-size: 15px;
+      // background-color: $primary-color-white;
+      // opacity: 0.1;
+    }
+  }
 }

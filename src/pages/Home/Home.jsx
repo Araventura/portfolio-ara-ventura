@@ -14,6 +14,9 @@ function Home() {
         <h4 className="home__open">
           Currently open for collaborations and freelancing
         </h4>
+        <Link to={"/chatbot"} className="home__chatbot">
+          Check out my newest project! A chatbot integrated with OpenAI. ✨
+        </Link>
       </div>
       <div className="home__bottom">
         <Link to={"/work"} className="home__bottom-text">
