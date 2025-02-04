@@ -21,7 +21,9 @@ function Home() {
         <h4 className="home__description">Vancouver, BC</h4>
       </div>
       <div className="home__scroll">
-        <img className="home__scroll-arrow " src={arrow} alt="arrow" />
+        <Link className="home__scroll-link">
+          <img className="home__scroll-arrow " src={arrow} alt="arrow" />
+        </Link>
       </div>
       <div className="home__bottom">
         <Link to={"/work"} className="home__bottom-text">
