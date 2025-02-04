@@ -1,16 +1,17 @@
 import React from "react";
 import "./Home.scss";
 import { Link } from "react-router-dom";
+import logo from "../../assets/images/av-logo.png";
 
 function Home() {
   return (
     <div className="home">
       <div className="home__top">
-        <h1 className="home__title">ARA VENTURA</h1>
-        <h4 className="home__description">
-          Software Engineer with a special interest on AI / Full Stack Web
-          Developer
-        </h4>
+        <Link to={"/home"}>
+          <img class="home__logo" src={logo} alt="Ara Ventura's logo" />
+        </Link>
+        <h4 className="home__description">Full Stack Web Development</h4>
+        <h4 className="home__description">Vancouver, BC</h4>
         <h4 className="home__open">
           Currently open for collaborations and freelancing
         </h4>
