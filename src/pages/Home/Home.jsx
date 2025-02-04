@@ -7,14 +7,13 @@ function Home() {
   return (
     <div className="home">
       <div className="home__top">
-        <Link to={"/home"}>
-          <img class="home__logo" src={logo} alt="Ara Ventura's logo" />
-        </Link>
+        <div className="home__logo-container">
+          <Link to={"/home"}>
+            <img class="home__logo" src={logo} alt="Ara Ventura's logo" />
+          </Link>
+        </div>
         <h4 className="home__description">Full Stack Web Development</h4>
         <h4 className="home__description">Vancouver, BC</h4>
-        <h4 className="home__open">
-          Currently open for collaborations and freelancing
-        </h4>
       </div>
       <div className="home__bottom">
         <Link to={"/work"} className="home__bottom-text">

@@ -89,4 +89,17 @@
       }
     }
   }
+
+  &__logo {
+    height: 500px;
+
+    &-container {
+      display: flex;
+      overflow: hidden;
+      height: 250px;
+      align-items: center;
+      justify-content: end;
+      margin-right: 45px;
+    }
+  }
 }
