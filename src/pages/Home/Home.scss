@@ -90,16 +90,27 @@
     }
   }
 
-  &__logo {
-    height: 500px;
+  &__container {
+    display: flex;
+    overflow: hidden;
+    height: 250px;
+    align-items: center;
+    justify-content: end;
+    margin-right: 45px;
+    &-logo {
+      height: 500px;
+    }
+  }
 
-    &-container {
-      display: flex;
-      overflow: hidden;
-      height: 250px;
-      align-items: center;
-      justify-content: end;
-      margin-right: 45px;
+  &__scroll {
+    height: 30px;
+    display: flex;
+    justify-content: end;
+
+    &-arrow {
+      height: 30px;
+      transform: rotate(-90deg);
+      opacity: 0.5;
     }
   }
 }

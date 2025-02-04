@@ -2,18 +2,26 @@ import React from "react";
 import "./Home.scss";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/av-logo.png";
+import arrow from "../../assets/icons/left-arrow.png";
 
 function Home() {
   return (
     <div className="home">
       <div className="home__top">
-        <div className="home__logo-container">
+        <div className="home__container">
           <Link to={"/home"}>
-            <img class="home__logo" src={logo} alt="Ara Ventura's logo" />
+            <img
+              class="home__container-logo"
+              src={logo}
+              alt="Ara Ventura's logo"
+            />
           </Link>
         </div>
         <h4 className="home__description">Full Stack Web Development</h4>
         <h4 className="home__description">Vancouver, BC</h4>
+      </div>
+      <div className="home__scroll">
+        <img className="home__scroll-arrow " src={arrow} alt="arrow" />
       </div>
       <div className="home__bottom">
         <Link to={"/work"} className="home__bottom-text">
