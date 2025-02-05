@@ -2,6 +2,14 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/fonts" as *;
 
+@keyframes bounce {
+  from {
+    margin-bottom: 16px;
+  }
+  to {
+    margin-bottom: 0;
+  }
+}
 .home {
   display: flex;
   flex-direction: column;
@@ -109,6 +117,7 @@
     position: fixed;
     bottom: 16px;
     right: 16px;
+    animation: bounce 1s 7 alternate;
 
     &-arrow {
       height: 30px;
