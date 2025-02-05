@@ -117,7 +117,7 @@
     position: fixed;
     bottom: 16px;
     right: 16px;
-    animation: bounce 1s 7 alternate;
+    animation: bounce 1s 20 alternate;
 
     &-arrow {
       height: 30px;
@@ -126,6 +126,7 @@
 
       &:hover {
         opacity: 1;
+        animation: none;
       }
     }
   }
