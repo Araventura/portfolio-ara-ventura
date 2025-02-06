@@ -11,7 +11,7 @@ function Home() {
         <div className="home__container">
           <Link to={"/home"}>
             <img
-              class="home__container-logo"
+              className="home__container-logo"
               src={logo}
               alt="Ara Ventura's logo"
             />
