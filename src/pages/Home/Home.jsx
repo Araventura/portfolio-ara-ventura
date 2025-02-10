@@ -30,8 +30,12 @@ function Home() {
         <Link to={"/work"} className="home__bottom-text">
           WORK
         </Link>
-        <div className="home__bottom-img">
-          <img src="" alt="" />
+        <div className="home__bottom-wrapper">
+          <img
+            className="home__bottom-wrapper__img"
+            src={workImage}
+            alt="A mobile and tablet simulation"
+          />
         </div>
         <Link to={"/about"} className="home__bottom-text">
           ABOUT
