@@ -81,6 +81,7 @@
       font-family: "Libre";
       transition: 0.5s;
       opacity: 0.1;
+      width: fit-content;
 
       @include tablet {
         font-size: 100px;
@@ -103,8 +104,8 @@
     overflow: hidden;
     height: 250px;
     align-items: center;
-    justify-content: end;
-    margin-right: 45px;
+    justify-content: center;
+    margin-right: 55px;
 
     &-logo {
       height: 500px;
