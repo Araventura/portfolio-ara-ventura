@@ -27,6 +27,19 @@ function Home() {
         </Link>
       </div>
       <div className="home__bottom">
+        <Link to={"/about"} className="home__bottom-text">
+          ABOUT
+        </Link>
+        <div>
+          <h3 className="home__subtitle">
+            Hello, I'm Ara. I'm so grateful to have you here.
+          </h3>
+          <h4 className="home__description">
+            I'm a motivated and detail-oriented Junior Software Engineer with a
+            passion for developing efficient and user-friendly applications.
+            Strong foundation in JavaScript, Python and full-stack development.
+          </h4>
+        </div>
         <Link to={"/work"} className="home__bottom-text">
           WORK
         </Link>
@@ -37,9 +50,7 @@ function Home() {
             alt="A mobile and tablet simulation"
           />
         </div>
-        <Link to={"/about"} className="home__bottom-text">
-          ABOUT
-        </Link>
+
         <Link to={"/contact"} className="home__bottom-text">
           CONTACT
         </Link>
