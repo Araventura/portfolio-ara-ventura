@@ -3,6 +3,7 @@ import "./Home.scss";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/av-logo.png";
 import arrow from "../../assets/icons/left-arrow.png";
+import workImage from "../../assets/images/mobile-tablet.png";
 
 function Home() {
   return (
@@ -29,6 +30,9 @@ function Home() {
         <Link to={"/work"} className="home__bottom-text">
           WORK
         </Link>
+        <div className="home__bottom-img">
+          <img src="" alt="" />
+        </div>
         <Link to={"/about"} className="home__bottom-text">
           ABOUT
         </Link>
