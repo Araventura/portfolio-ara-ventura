@@ -5,6 +5,7 @@ import logo from "../../assets/images/av-logo.png";
 import arrow from "../../assets/icons/left-arrow.png";
 import workImage from "../../assets/images/mobile-tablet.png";
 import dentaShiftImage from "../../assets/images/dentashift.png";
+import purelyChic from "../../assets/images/purelyChic.png";
 
 function Home() {
   return (
@@ -38,7 +39,6 @@ function Home() {
           <h4 className="home__description">
             I'm a motivated and detail-oriented Junior Software Engineer with a
             passion for developing efficient and user-friendly applications.
-            Strong foundation in JavaScript, Python and full-stack development.
           </h4>
           <Link to={"/about"} className="home__description-more">
             More about me →
@@ -61,7 +61,7 @@ function Home() {
               <div className="home__list-wrapper">
                 <h3 className="home__list-title">InStock - Practice </h3>
                 <h4 className="home__list-description">
-                  Front-End, Back-End, Rest APIs
+                  JavaScript, React, MySQL, Express, Rest APIs
                 </h4>
                 <h4 className="home__list-description">
                   A web application where the customer can manage Warehouses and
@@ -78,7 +78,7 @@ function Home() {
               <div className="home__list-wrapper">
                 <h3 className="home__list-title">Denta Shift - Practice</h3>
                 <h4 className="home__list-description">
-                  Front-End, Back-End, Rest APIs
+                  JavaScript, React, MySQL, Express, Rest APIs
                 </h4>
                 <h4 className="home__list-description">
                   A web application where dentists can find a dental
@@ -89,11 +89,11 @@ function Home() {
             <li className="home__list-item">
               <img
                 className="home__bottom-wrapper__img"
-                src={workImage}
+                src={purelyChic}
                 alt="A mobile and tablet simulation"
               />
               <div className="home__list-wrapper">
-                <h3 className="home__list-title">Purely Chic</h3>
+                <h3 className="home__list-title">Purely Chic - Practice</h3>
                 <h4 className="home__list-description">
                   Vite, Sass, React.js, Axios, Node.js and CORS.
                 </h4>
