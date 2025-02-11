@@ -78,8 +78,11 @@ function Home() {
               <div className="home__list-wrapper">
                 <h3 className="home__list-title">Denta Shift - Practice</h3>
                 <h4 className="home__list-description">
+                  Front-End, Back-End, Rest APIs
+                </h4>
+                <h4 className="home__list-description">
                   A web application where dentists can find a dental
-                  professional based on their offices needs
+                  professional based on their offices needs.
                 </h4>
               </div>
             </li>
@@ -90,9 +93,13 @@ function Home() {
                 alt="A mobile and tablet simulation"
               />
               <div className="home__list-wrapper">
-                <h3 className="home__list-title">Title of Project</h3>
+                <h3 className="home__list-title">Purely Chic</h3>
                 <h4 className="home__list-description">
-                  Description of Project
+                  Vite, Sass, React.js, Axios, Node.js and CORS.
+                </h4>
+                <h4 className="home__list-description">
+                  A web application where users can find beauty products that
+                  are eco-friendly.
                 </h4>
               </div>
             </li>
