@@ -103,6 +103,24 @@ function Home() {
         <Link to={"/contact"} className="home__bottom-text">
           CONTACT
         </Link>
+        <h3>Email me</h3>
+        <h4>ara.venturafitch@gmail.com</h4>
+        <Link>LinkedIn</Link>
+        <h4>
+          I can be reached by Email, LinkedIn or send me a message here - I'd
+          love to connect with you!
+        </h4>
+        <form action="">
+          <div>
+            <span>Contact Details</span>
+            <input type="text" placeholder="*Full Name" />
+            <input type="text" placeholder="*Email" />
+            <input type="text" placeholder="Company (optional)" />
+          </div>
+          <span>Message</span>
+          <textarea placeholder="*Tell me about yourself!"></textarea>
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
   );
