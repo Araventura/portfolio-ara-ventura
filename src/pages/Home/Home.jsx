@@ -130,7 +130,7 @@ function Home() {
             placeholder="*Tell me about yourself!"
           ></textarea>
           <button className="form__button" type="submit">
-            Send
+            Send →
           </button>
         </form>
       </div>
