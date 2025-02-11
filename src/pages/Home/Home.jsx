@@ -50,11 +50,21 @@ function Home() {
           <h3 className="home__subtitle">
             Swipe to see some of the projects I've built.
           </h3>
-          <img
-            className="home__bottom-wrapper__img"
-            src={workImage}
-            alt="A mobile and tablet simulation"
-          />
+          <ul className="home__list">
+            <li className="home__list-item">
+              <img
+                className="home__bottom-wrapper__img"
+                src={workImage}
+                alt="A mobile and tablet simulation"
+              />
+              <div className="home__list-wrapper">
+                <h3 className="home__list-title">Title of Project</h3>
+                <h4 className="home__list-description">
+                  Description of Project
+                </h4>
+              </div>
+            </li>
+          </ul>
           <Link to={"/work"} className="home__description-more">
             More Projects →
           </Link>
