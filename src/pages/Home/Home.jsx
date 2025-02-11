@@ -103,9 +103,8 @@ function Home() {
         <Link to={"/contact"} className="home__bottom-text">
           CONTACT
         </Link>
-        <h3>Email me</h3>
-        <h4>ara.venturafitch@gmail.com</h4>
-        <Link>LinkedIn</Link>
+        <h3 className="home__email">Email me:</h3>
+        <h4 className="home__email-me">ara.venturafitch@gmail.com</h4>
         <h4>
           I can be reached by Email, LinkedIn or send me a message here - I'd
           love to connect with you!

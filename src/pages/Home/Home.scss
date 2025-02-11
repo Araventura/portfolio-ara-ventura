@@ -180,4 +180,13 @@
       text-align: center;
     }
   }
+
+  &__email {
+    font-size: 14px;
+    font-weight: 700;
+
+    &-me {
+      font-size: 12px;
+    }
+  }
 }
