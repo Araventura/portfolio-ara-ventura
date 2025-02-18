@@ -3,9 +3,6 @@ import "./Home.scss";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/av-logo.png";
 import arrow from "../../assets/icons/left-arrow.png";
-import workImage from "../../assets/images/mobile-tablet.png";
-import dentaShiftImage from "../../assets/images/dentashift.png";
-import purelyChic from "../../assets/images/purelyChic.png";
 import Projects from "../../components/Projects/Projects.jsx";
 
 function Home() {
