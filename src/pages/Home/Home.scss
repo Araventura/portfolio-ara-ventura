@@ -111,6 +111,13 @@
         opacity: 1;
       }
     }
+
+    &-wrapper {
+      &__img {
+        width: 300px;
+        padding-bottom: 10px;
+      }
+    }
   }
 
   &__container {
