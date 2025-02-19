@@ -1,6 +1,5 @@
 import React from "react";
 import "./Projects.scss";
-import { Link } from "react-router-dom";
 import workImage from "../../assets/images/mobile-tablet.png";
 import dentaShiftImage from "../../assets/images/dentashift.png";
 import purelyChic from "../../assets/images/purelyChic.png";
@@ -16,11 +15,7 @@ function Projects() {
           <div className="home__list-item">
             <div className="uk-card uk-card-default">
               <div className="uk-card-media-top">
-                <img
-                  className="home__bottom-wrapper__img"
-                  src={workImage}
-                  alt=""
-                />
+                <img src={workImage} alt="" />
               </div>
               <div className="home__list-wrapper uk-card-body">
                 <h3 className="home__list-title">InStock - Practice </h3>
@@ -37,11 +32,7 @@ function Projects() {
           <div className="home__list-item">
             <div className="uk-card uk-card-default">
               <div className="uk-card-media-top">
-                <img
-                  className="home__bottom-wrapper__img"
-                  src={dentaShiftImage}
-                  alt=""
-                />
+                <img src={dentaShiftImage} alt="" />
               </div>
               <div className="home__list-wrapper uk-card-body">
                 <h3 className="home__list-title">Denta Shift - Practice</h3>
@@ -58,11 +49,7 @@ function Projects() {
           <div className="home__list-item">
             <div className="uk-card uk-card-default">
               <div className="uk-card-media-top">
-                <img
-                  className="home__bottom-wrapper__img"
-                  src={purelyChic}
-                  alt=""
-                />
+                <img src={purelyChic} alt="" />
               </div>
               <div className="home__list-wrapper uk-card-body">
                 <h3 className="home__list-title">Purely Chic - Practice</h3>

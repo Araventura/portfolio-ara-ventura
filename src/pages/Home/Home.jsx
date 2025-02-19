@@ -50,7 +50,6 @@ function Home() {
             Swipe to see some of the projects I've built.
           </h3>
           <Projects />
-          <h1>^ SLIDER</h1>
           <Link to={"/work"} className="home__description-more">
             More Projects →
           </Link>
