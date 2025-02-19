@@ -6,7 +6,7 @@ import purelyChic from "../../assets/images/purelyChic.png";
 
 function Projects() {
   return (
-    <div className="uk-slider-container-offset" uk-slider>
+    <div className="uk-slider-container-offset" uk-slider="true">
       <div
         className="uk-position-relative uk-visible-toggle uk-light"
         tabIndex="-1"
@@ -66,14 +66,14 @@ function Projects() {
         </div>
         <a
           className="uk-position-center-left uk-position-small uk-hidden-hover"
-          href
-          uk-slidenav-previous
+          href="true"
+          uk-slidenav-previous="true"
           uk-slider-item="previous"
         ></a>
         <a
           className="uk-position-center-right uk-position-small uk-hidden-hover"
-          href
-          uk-slidenav-next
+          href="true"
+          uk-slidenav-next="true"
           uk-slider-item="next"
         ></a>
       </div>

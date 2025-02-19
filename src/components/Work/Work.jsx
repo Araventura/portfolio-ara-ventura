@@ -26,14 +26,14 @@ function Work() {
 
       <div
         id="carouselExampleIndicators"
-        class="carousel slide photo__carousel"
+        className="carousel slide photo__carousel"
       >
-        <div class="carousel-indicators">
+        <div className="carousel-indicators">
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="0"
-            class="active"
+            className="active"
             aria-current="true"
             aria-label="Slide 1"
           ></button>
@@ -68,7 +68,7 @@ function Work() {
             aria-label="Slide 6"
           ></button>
         </div>
-        <div class="carousel-inner">
+        <div className="carousel-inner">
           <div className="carousel-item active">
             <img className="d-block w-100" src={aiOne} alt="First slide" />
           </div>
@@ -89,22 +89,28 @@ function Work() {
           </div>
         </div>
         <button
-          class="carousel-control-prev carousel__button"
+          className="carousel-control-prev carousel__button"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next carousel__button"
+          className="carousel-control-next carousel__button"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
         </button>
       </div>
       {/* end of carousel */}
