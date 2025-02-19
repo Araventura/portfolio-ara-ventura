@@ -8,13 +8,18 @@ import "swiper/css";
 
 function Projects() {
   return (
-    <div>
+    <div className="projects">
+      <div className="swiper-pagination swiper-pagination-bullets">
+        <span className="swiper-pagination-bullet"></span>
+        <span className="swiper-pagination-bullet"></span>
+        <span className="swiper-pagination-bullet"></span>
+      </div>
       <ul className="home__list">
         <Swiper
           spaceBetween={2}
           slidesPerView={1}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
+          //   onSlideChange={() => console.log("slide change")}
+          //   onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
             <li className="home__list-item">
