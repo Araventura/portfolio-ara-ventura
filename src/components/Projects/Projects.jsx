@@ -3,6 +3,8 @@ import "./Projects.scss";
 import workImage from "../../assets/images/mobile-tablet.png";
 import dentaShiftImage from "../../assets/images/dentashift.png";
 import purelyChic from "../../assets/images/purelyChic.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 function Projects() {
   return (
