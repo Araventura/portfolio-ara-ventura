@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/images/av-logo.png";
 import arrow from "../../assets/icons/left-arrow.png";
 import Projects from "../../components/Projects/Projects.jsx";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 function Home() {
   return (
@@ -31,13 +35,21 @@ function Home() {
           ABOUT
         </Link>
         <div className="home__botton-about">
-          <h3 className="home__subtitle">
-            Hello, I'm Ara. I'm so grateful to have you here.
-          </h3>
-          <h4 className="home__description">
-            I'm a motivated and detail-oriented Junior Software Engineer with a
-            passion for developing efficient and user-friendly applications.
-          </h4>
+          <div
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
+            <h3 className="home__subtitle">
+              Hello, I'm Ara. I'm so grateful to have you here.
+            </h3>
+          </div>
+          <div>
+            <h4 className="home__description">
+              I'm a motivated and detail-oriented Junior Software Engineer with
+              a passion for developing efficient and user-friendly applications.
+            </h4>
+          </div>
           <Link to={"/about"} className="home__description-more">
             More about me →
           </Link>
@@ -58,43 +70,45 @@ function Home() {
         <Link to={"/contact"} className="home__bottom-text">
           CONTACT
         </Link>
-        <h3 className="home__email">Email me:</h3>
-        <h4 className="home__email-me">ara.venturafitch@gmail.com</h4>
-        <h4 className="home__reach">
-          I can be reached by Email, LinkedIn or send me a message here - I'd
-          love to connect with you!
-        </h4>
-        <form action="" className="form">
-          <div className="form__container">
-            <span className="form__title">Contact Details</span>
-            <input
-              className="form__input"
-              type="text"
-              placeholder="*Full Name"
+        <div>
+          <h3 className="home__email">Email me:</h3>
+          <h4 className="home__email-me">ara.venturafitch@gmail.com</h4>
+          <h4 className="home__reach">
+            I can be reached by Email, LinkedIn or send me a message here - I'd
+            love to connect with you!
+          </h4>
+          <form action="" className="form">
+            <div className="form__container">
+              <span className="form__title">Contact Details</span>
+              <input
+                className="form__input"
+                type="text"
+                placeholder="*Full Name"
+                required
+              />
+              <input
+                className="form__input"
+                type="email"
+                placeholder="*Email"
+                required
+              />
+              <input
+                className="form__input"
+                type="text"
+                placeholder="Company (optional)"
+              />
+            </div>
+            <span className="form__title">Message</span>
+            <textarea
+              className="form__textarea"
+              placeholder="*Tell me about yourself!"
               required
-            />
-            <input
-              className="form__input"
-              type="email"
-              placeholder="*Email"
-              required
-            />
-            <input
-              className="form__input"
-              type="text"
-              placeholder="Company (optional)"
-            />
-          </div>
-          <span className="form__title">Message</span>
-          <textarea
-            className="form__textarea"
-            placeholder="*Tell me about yourself!"
-            required
-          ></textarea>
-          <button className="form__button" type="submit">
-            Send →
-          </button>
-        </form>
+            ></textarea>
+            <button className="form__button" type="submit">
+              Send →
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
