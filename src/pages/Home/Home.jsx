@@ -14,7 +14,12 @@ function Home() {
   return (
     <div className="home">
       <div className="home__top">
-        <div className="home__container">
+        <div
+          className="home__container"
+          data-aos="fade-right"
+          data-aos-offset="400"
+          data-aos-easing="ease-in-sine"
+        >
           <Link to={"/home"}>
             <img
               className="home__container-logo"
@@ -23,8 +28,17 @@ function Home() {
             />
           </Link>
         </div>
-        <h4 className="home__description">Full Stack Web Development</h4>
-        <h4 className="home__description">Vancouver, BC</h4>
+        <div
+          className="home__wrapper"
+          data-aos="fade-right"
+          data-aos-offset="400"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="100"
+          data-aos-once
+        >
+          <h4 className="home__description">Full Stack Web Development</h4>
+          <h4 className="home__description">Vancouver, BC</h4>
+        </div>
       </div>
       <div className="home__scroll">
         <Link className="home__scroll-link">
@@ -36,11 +50,7 @@ function Home() {
           ABOUT
         </Link>
         <div className="home__botton-about">
-          <div
-            data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
-          >
+          <div>
             <h3 className="home__subtitle">
               Hello, I'm Ara. I'm so grateful to have you here.
             </h3>
@@ -67,7 +77,6 @@ function Home() {
             More Projects →
           </Link>
         </div>
-
         <Link to={"/contact"} className="home__bottom-text">
           CONTACT
         </Link>
