@@ -3,21 +3,29 @@ import "./Projects.scss";
 import workImage from "../../assets/images/mobile-tablet.png";
 import dentaShiftImage from "../../assets/images/dentashift.png";
 import purelyChic from "../../assets/images/purelyChic.png";
-import { Swiper, SwiperSlide } from "swiper/react";
+
+// Swiper
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 
 function Projects() {
   return (
     <div className="projects">
-      <div className="swiper-pagination swiper-pagination-bullets">
-        <span className="swiper-pagination-bullet"></span>
-        <span className="swiper-pagination-bullet"></span>
-        <span className="swiper-pagination-bullet"></span>
-      </div>
       <ul className="home__list">
         <Swiper
           spaceBetween={2}
           slidesPerView={1}
+          cssMode={true}
+          navigation={true}
+          pagination={true}
+          mousewheel={true}
+          keyboard={true}
+          modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+          className="swiper"
           //   onSlideChange={() => console.log("slide change")}
           //   onSwiper={(swiper) => console.log(swiper)}
         >
