@@ -116,6 +116,7 @@
       &__img {
         width: 300px;
         padding-bottom: 10px;
+        padding-left: 10px;
       }
     }
   }
@@ -178,15 +179,14 @@
 
     &-title {
       font-size: 13px;
-      font-family: "Montserrat";
+      margin: 0;
     }
 
     &-description {
-      font-size: 11px;
+      font-size: 10px;
       opacity: 0.7;
       text-align: center;
-      margin: 5px 0;
-      font-family: "Montserrat";
+      margin: 5px 0 0;
     }
   }
 

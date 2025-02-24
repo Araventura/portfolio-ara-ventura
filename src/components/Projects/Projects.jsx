@@ -21,13 +21,10 @@ function Projects() {
           slidesPerView={1}
           cssMode={true}
           navigation={true}
-          pagination={true}
           mousewheel={true}
           keyboard={true}
           modules={[Navigation, Pagination, Mousewheel, Keyboard]}
           className="swiper"
-          //   onSlideChange={() => console.log("slide change")}
-          //   onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
             <li className="home__list-item">
