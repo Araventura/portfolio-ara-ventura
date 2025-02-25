@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import "./Home.scss";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/av-logo.png";
@@ -11,6 +12,21 @@ import "aos/dist/aos.css";
 AOS.init();
 
 function Home() {
+  const [scroll, setScroll] = useState(0);
+
+  window.addEventListener("scroll", function () {
+    console.log(this.scrollY);
+  });
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScroll(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="home">
       <div className="home__top">
@@ -40,18 +56,14 @@ function Home() {
         <Link to={"/about"} className="home__bottom-text">
           ABOUT
         </Link>
-        <div className="home__botton-about">
-          <div>
-            <h3 className="home__subtitle">
-              Hello, I'm Ara. I'm so grateful to have you here.
-            </h3>
-          </div>
-          <div>
-            <h4 className="home__description">
-              I'm a motivated and detail-oriented Junior Software Engineer with
-              a passion for developing efficient and user-friendly applications.
-            </h4>
-          </div>
+        <div className={`home__bottom-about ${scroll <= 130 ? "hidden" : ""}`}>
+          <h3 className="home__subtitle">
+            Hello, I'm Ara. I'm so grateful to have you here.
+          </h3>
+          <h4 className="home__description">
+            I'm a motivated and detail-oriented Junior Software Engineer with a
+            passion for developing efficient and user-friendly applications.
+          </h4>
           <Link to={"/about"} className="home__description-more">
             More about me →
           </Link>
@@ -59,7 +71,9 @@ function Home() {
         <Link to={"/work"} className="home__bottom-text">
           WORK
         </Link>
-        <div className="home__bottom-wrapper">
+        <div
+          className={`home__bottom-wrapper ${scroll <= 250 ? "hidden" : ""}`}
+        >
           <h3 className="home__subtitle">
             Swipe to see some of the projects I've built.
           </h3>

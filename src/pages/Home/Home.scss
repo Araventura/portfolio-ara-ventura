@@ -113,11 +113,16 @@
     }
 
     &-wrapper {
+      display: block;
       &__img {
         width: 300px;
         padding-bottom: 10px;
         padding-left: 10px;
       }
+    }
+
+    &-about {
+      display: block;
     }
   }
 
@@ -203,4 +208,8 @@
     font-size: 12px;
     opacity: 0.7;
   }
+}
+
+.hidden {
+  display: none;
 }
