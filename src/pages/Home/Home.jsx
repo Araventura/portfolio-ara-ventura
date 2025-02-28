@@ -12,15 +12,22 @@ import "aos/dist/aos.css";
 AOS.init();
 
 function Home() {
-  const [scroll, setScroll] = useState(0);
+  const [hideAbout, setHideAbout] = useState(true);
+  const [hideWork, setHideWork] = useState(true);
 
-  window.addEventListener("scroll", function () {
-    console.log(this.scrollY);
-  });
+  // window.addEventListener("scroll", function () {
+  //   console.log(this.scrollY);
+  // });
 
   useEffect(() => {
     const handleScroll = () => {
-      setScroll(window.scrollY);
+      if (window.scrollY >= 130) {
+        setHideAbout(false);
+      }
+
+      if (window.scrollY >= 450) {
+        setHideWork(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -44,8 +51,10 @@ function Home() {
             />
           </Link>
         </div>
-        <h4 className="home__description">Full Stack Web Development</h4>
-        <h4 className="home__description">Vancouver, BC</h4>
+        <div className="home__description-wrapper">
+          <h4 className="home__description">Full Stack Web Development</h4>
+          <h4 className="home__description">Vancouver, BC</h4>
+        </div>
       </div>
       <div className="home__scroll">
         <Link className="home__scroll-link">
@@ -58,7 +67,7 @@ function Home() {
             ABOUT
           </Link>
         </div>
-        <div className={`home__bottom-about ${scroll <= 130 ? "hidden" : ""}`}>
+        <div className={`home__bottom-about ${hideAbout ? "hidden" : ""}`}>
           <h3 className="home__subtitle">
             Hello, I'm Ara. I'm so grateful to have you here.
           </h3>
@@ -75,9 +84,7 @@ function Home() {
             WORK
           </Link>
         </div>
-        <div
-          className={`home__bottom-wrapper ${scroll <= 250 ? "hidden" : ""}`}
-        >
+        <div className={`home__bottom-wrapper ${hideWork ? "hidden" : ""}`}>
           <h3 className="home__subtitle">
             Swipe to see some of the projects I've built.
           </h3>
