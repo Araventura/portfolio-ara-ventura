@@ -53,9 +53,11 @@ function Home() {
         </Link>
       </div>
       <div className="home__bottom">
-        <Link to={"/about"} className="home__bottom-title">
-          ABOUT
-        </Link>
+        <div className="home__link">
+          <Link to={"/about"} className="home__bottom-title">
+            ABOUT
+          </Link>
+        </div>
         <div className={`home__bottom-about ${scroll <= 130 ? "hidden" : ""}`}>
           <h3 className="home__subtitle">
             Hello, I'm Ara. I'm so grateful to have you here.
@@ -68,9 +70,11 @@ function Home() {
             More about me →
           </Link>
         </div>
-        <Link to={"/work"} className="home__bottom-title">
-          WORK
-        </Link>
+        <div className="home__link">
+          <Link to={"/work"} className="home__bottom-title">
+            WORK
+          </Link>
+        </div>
         <div
           className={`home__bottom-wrapper ${scroll <= 250 ? "hidden" : ""}`}
         >
