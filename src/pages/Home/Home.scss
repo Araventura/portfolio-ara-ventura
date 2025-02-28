@@ -114,6 +114,7 @@
 
     &-wrapper {
       display: block;
+      transition: 1s;
       &__img {
         width: 300px;
         padding-bottom: 10px;
@@ -123,6 +124,7 @@
 
     &-about {
       display: block;
+      transition: 1s;
     }
   }
 
