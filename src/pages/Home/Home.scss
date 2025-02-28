@@ -96,6 +96,7 @@
       transition: 0.5s;
       opacity: 0.1;
       width: fit-content;
+      overflow: hidden;
 
       @include tablet {
         font-size: 100px;
@@ -115,6 +116,11 @@
     &-wrapper {
       display: block;
       transition: 1s;
+      animation: showBottomText 1s;
+      animation-delay: 0s;
+      animation-fill-mode: forwards;
+      transform: translate(0, 0);
+
       &__img {
         width: 300px;
         padding-bottom: 10px;
@@ -125,6 +131,10 @@
     &-about {
       display: block;
       transition: 1s;
+      animation: showBottomText 1s;
+      animation-delay: 0s;
+      animation-fill-mode: forwards;
+      transform: translate(0, 0);
     }
   }
 
