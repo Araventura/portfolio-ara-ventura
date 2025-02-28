@@ -53,7 +53,7 @@ function Home() {
         </Link>
       </div>
       <div className="home__bottom">
-        <Link to={"/about"} className="home__bottom-text">
+        <Link to={"/about"} className="home__bottom-title">
           ABOUT
         </Link>
         <div className={`home__bottom-about ${scroll <= 130 ? "hidden" : ""}`}>
@@ -68,7 +68,7 @@ function Home() {
             More about me →
           </Link>
         </div>
-        <Link to={"/work"} className="home__bottom-text">
+        <Link to={"/work"} className="home__bottom-title">
           WORK
         </Link>
         <div
@@ -82,7 +82,7 @@ function Home() {
             More Projects →
           </Link>
         </div>
-        <Link to={"/contact"} className="home__bottom-text">
+        <Link to={"/contact"} className="home__bottom-title">
           CONTACT
         </Link>
         <Form />

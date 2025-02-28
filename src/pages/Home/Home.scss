@@ -90,13 +90,15 @@
     justify-content: space-between;
     padding-top: 32px;
 
-    &-text {
+    &-title {
       font-size: 55px;
       font-family: "Libre";
       transition: 0.5s;
-      opacity: 0.1;
       width: fit-content;
       overflow: hidden;
+      background-color: $primary-color-background;
+      color: #c5c5c5;
+      //add background color, change opacity to COLOR
 
       @include tablet {
         font-size: 100px;
@@ -116,7 +118,7 @@
     &-wrapper {
       display: block;
       transition: 1s;
-      animation: showBottomText 1s;
+      animation: showBottomText 1.5s;
       animation-delay: 0s;
       animation-fill-mode: forwards;
       transform: translate(0, 0);
@@ -131,7 +133,7 @@
     &-about {
       display: block;
       transition: 1s;
-      animation: showBottomText 1s;
+      animation: showBottomText 1.5s;
       animation-delay: 0s;
       animation-fill-mode: forwards;
       transform: translate(0, 0);
