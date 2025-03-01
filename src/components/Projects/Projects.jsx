@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+import { Navigation, Mousewheel, Keyboard } from "swiper/modules";
 
 function Projects() {
   return (
@@ -23,7 +23,7 @@ function Projects() {
           navigation={true}
           mousewheel={true}
           keyboard={true}
-          modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+          modules={[Navigation, Mousewheel, Keyboard]}
           className="swiper"
         >
           <SwiperSlide>
