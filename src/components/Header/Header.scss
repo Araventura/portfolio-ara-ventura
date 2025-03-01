@@ -3,10 +3,14 @@
 
 .header {
   display: flex;
-  gap: 130%;
+  gap: 50%;
   margin: 16px 0;
   position: fixed;
   top: 0;
+  z-index: 100;
+  background-color: $primary-color-background;
+  width: 100%;
+  padding-bottom: 12px;
 
   @include tablet {
     transform: rotate(-90deg);
