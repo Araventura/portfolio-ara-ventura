@@ -121,7 +121,8 @@
     }
 
     &-wrapper {
-      display: inline-block;
+      position: relative;
+      z-index: 2;
       transition: 1s;
       animation: showBottomText 3s;
       animation-delay: 0s;
@@ -137,12 +138,12 @@
     &-about {
       display: block;
       transition: 1s;
-      animation: showBottomText 1.5s;
+      animation: showBottomText 0.5s;
       animation-delay: 0s;
       animation-fill-mode: forwards;
       transform: translate(0, 0);
       background-color: $primary-color-background;
-      z-index: 2;
+      z-index: 4;
     }
   }
 
@@ -168,6 +169,7 @@
     bottom: 16px;
     right: 16px;
     animation: bounce 1s 20 alternate;
+    z-index: 99;
 
     &-arrow {
       height: 30px;
@@ -233,6 +235,7 @@
     overflow: hidden;
     background-color: $primary-color-background;
     color: #cbc3c3;
+    position: relative;
     z-index: 4;
   }
 }

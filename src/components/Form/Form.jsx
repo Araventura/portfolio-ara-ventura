@@ -1,9 +1,9 @@
 import React from "react";
 import "./Form.scss";
 
-function Form() {
+function Form(props) {
   return (
-    <div className="contact-form">
+    <div className={`contact-form ${props.hideContact ? "hidden" : ""}`}>
       <h3 className="home__email">Email me:</h3>
       <h4 className="home__email-me">ara.venturafitch@gmail.com</h4>
       <h4 className="home__reach">
