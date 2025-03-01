@@ -3,8 +3,10 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
+  gap: 130%;
   margin: 16px 0;
+  position: fixed;
+  top: 0;
 
   @include tablet {
     transform: rotate(-90deg);
@@ -30,9 +32,12 @@
     }
   }
 
+  &__socials {
+    display: flex;
+  }
+
   &__link {
-    font-size: 12px;
-    padding: 0 15px;
+    padding-left: 15px;
 
     &:hover {
       text-decoration: overline;
@@ -40,11 +45,8 @@
     }
   }
 
-  &__line {
-    border: 1px solid $primary-color-white;
-    height: 2px;
-    width: 60px;
-    margin-left: 10px;
+  &__logo {
+    width: 15px;
   }
 
   &__right {
