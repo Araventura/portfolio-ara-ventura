@@ -10,7 +10,11 @@ function Form(props) {
         I can be reached by Email, LinkedIn or send me a message here - I'd love
         to connect with you!
       </h4>
-      <form action="" className="form">
+      <form
+        action="mailto:ara.venturafitch@gmail.com"
+        method="post"
+        className="form"
+      >
         <div className="form__container">
           <span className="form__title">Contact Details</span>
           <input
