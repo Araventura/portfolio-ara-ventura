@@ -34,6 +34,7 @@
     justify-content: space-between;
     background-color: $primary-color-background;
     z-index: 5;
+    margin-top: 100px;
 
     @include desktop {
       justify-content: end;
