@@ -179,28 +179,6 @@
     }
   }
 
-  &__scroll {
-    height: 40px;
-    display: flex;
-    justify-content: end;
-    position: fixed;
-    bottom: 16px;
-    right: 16px;
-    animation: bounce 1s 20 alternate;
-    z-index: 99;
-
-    &-arrow {
-      height: 30px;
-      transform: rotate(-90deg);
-      opacity: 0.5;
-
-      &:hover {
-        opacity: 1;
-        animation: none;
-      }
-    }
-  }
-
   &__subtitle {
     font-size: 12px;
     font-style: italic;
