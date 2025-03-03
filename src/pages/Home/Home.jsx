@@ -16,28 +16,19 @@ function Home() {
   const [hideWork, setHideWork] = useState(true);
   const [hideContact, setHideContact] = useState(true);
 
-  window.addEventListener("scroll", function () {
-    console.log(this.scrollY);
-  });
+  const handleClick = (e) => {
+    if (e.target.id == "about") {
+      setHideAbout(!hideAbout);
+    }
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= 70) {
-        setHideAbout(false);
-      }
+    if (e.target.id == "work") {
+      setHideWork(!hideWork);
+    }
 
-      if (window.scrollY >= 150) {
-        setHideWork(false);
-      }
-
-      if (window.scrollY >= 350) {
-        setHideContact(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    if (e.target.id == "contact") {
+      setHideContact(!hideContact);
+    }
+  };
 
   return (
     <div className="home">
@@ -63,14 +54,14 @@ function Home() {
       </div>
       <div className="home__scroll">
         <Link className="home__scroll-link">
-          <img className="home__scroll-arrow " src={arrow} alt="arrow" />
+          <img className="home__scroll-arrow" src={arrow} alt="arrow" />
         </Link>
       </div>
       <div className="home__bottom">
         <div className="home__link">
-          <Link to={"/about"} className="home__bottom-title">
+          <div id="about" onClick={handleClick} className="home__bottom-title">
             ABOUT
-          </Link>
+          </div>
         </div>
         <div className={`home__bottom-about ${hideAbout ? "hidden" : ""}`}>
           <h3 className="home__subtitle">
@@ -80,15 +71,18 @@ function Home() {
             I'm a motivated and detail-oriented Junior Software Engineer with a
             passion for developing efficient and user-friendly applications.
           </h4>
-          <Link to={"/about"} className="home__description-more">
+          <Link className="home__description-more" to={"/about"}>
             More about me →
+            <div className="home__description__wrapper-arrow">
+              <img className="home__description-arrow" src={arrow} alt="" />
+            </div>
           </Link>
         </div>
         <div className="home__section">
           <div className="home__link">
-            <Link to={"/work"} className="home__bottom-title">
+            <div id="work" className="home__bottom-title" onClick={handleClick}>
               WORK
-            </Link>
+            </div>
           </div>
           <div className={`home__bottom-wrapper ${hideWork ? "hidden" : ""}`}>
             <h3 className="home__subtitle">
@@ -100,9 +94,9 @@ function Home() {
             </Link>
           </div>
         </div>
-        <Link to={"/contact"} className="home__bottom-title">
+        <div id="contact" className="home__bottom-title" onClick={handleClick}>
           CONTACT
-        </Link>
+        </div>
         <Form hideContact={hideContact} />
       </div>
     </div>

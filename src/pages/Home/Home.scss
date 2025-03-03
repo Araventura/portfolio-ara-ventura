@@ -4,10 +4,10 @@
 
 @keyframes bounce {
   from {
-    margin-bottom: 16px;
+    margin-left: 16px;
   }
   to {
-    margin-bottom: 0;
+    margin-right: 0;
   }
 }
 
@@ -73,11 +73,28 @@
     &-more {
       font-size: 12px;
       opacity: 0.7;
+      display: flex;
 
       &:hover {
         opacity: 1;
         text-decoration: underline;
         color: white;
+      }
+    }
+
+    &__wrapper-arrow {
+      display: flex;
+      animation: bounce 1s 20 alternate;
+    }
+
+    &-arrow {
+      height: 15px;
+      transform: rotate(180deg);
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 1;
+        animation: none;
       }
     }
   }
