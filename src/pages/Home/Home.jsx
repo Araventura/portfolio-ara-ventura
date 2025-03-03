@@ -17,6 +17,8 @@ function Home() {
   const [hideContact, setHideContact] = useState(true);
 
   const handleClick = (e) => {
+    console.log("current hideContact state", hideContact);
+
     if (e.target.id == "about") {
       setHideAbout(!hideAbout);
     }
@@ -95,7 +97,7 @@ function Home() {
         <div id="contact" className="home__bottom-title" onClick={handleClick}>
           CONTACT
         </div>
-        <Form hideContact={hideContact} />
+        <Form className="" hideContact={hideContact} />
       </div>
     </div>
   );

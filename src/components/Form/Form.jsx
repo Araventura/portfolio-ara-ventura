@@ -1,9 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./Form.scss";
 
 function Form(props) {
   const formRef = useRef(null); // to access the form data inside function
   const [submitted, setSubmitted] = useState(false);
+
+  console.log("Received hideContact prop:", props.hideContact);
+  useEffect(() => {
+    console.log("Updated hideContact prop in Form:", props.hideContact);
+  }, [props.hideContact]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,7 +22,7 @@ function Form(props) {
         method: "POST",
         body: formData,
       });
-      formRef.current.reset(); //reset form fiels after submission
+      formRef.current.reset(); //reset form fields after submission
       setTimeout(() => setSubmitted(false), 4000);
     } catch (error) {
       setTimeout(() => setSubmitted(false), 4000);
