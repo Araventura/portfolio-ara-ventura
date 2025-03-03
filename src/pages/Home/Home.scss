@@ -74,6 +74,7 @@
       font-size: 12px;
       opacity: 0.7;
       display: flex;
+      margin-top: 8px;
 
       &:hover {
         opacity: 1;
@@ -84,13 +85,15 @@
 
     &__wrapper-arrow {
       display: flex;
-      animation: bounce 1s 20 alternate;
+      animation: bounce 1s infinite alternate;
     }
 
     &-arrow {
-      height: 15px;
+      height: 12px;
       transform: rotate(180deg);
-      opacity: 0.5;
+      opacity: 0.7;
+      margin-top: 3px;
+      margin-left: 5px;
 
       &:hover {
         opacity: 1;
@@ -156,10 +159,7 @@
     &-about {
       display: block;
       transition: 1s;
-      animation: showBottomText 0.5s;
-      animation-delay: 0s;
-      animation-fill-mode: forwards;
-      transform: translate(0, 0);
+      animation: showBottomText 0.5s 0s forwards;
       background-color: $primary-color-background;
       z-index: 4;
     }
@@ -237,5 +237,5 @@
 }
 
 .hidden {
-  display: none;
+  animation: hideBottomText 0.1s 0s forwards;
 }

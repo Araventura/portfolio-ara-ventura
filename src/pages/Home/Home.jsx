@@ -67,7 +67,7 @@ function Home() {
             passion for developing efficient and user-friendly applications.
           </h4>
           <Link className="home__description-more" to={"/about"}>
-            More about me →
+            More about me
             <div className="home__description__wrapper-arrow">
               <img className="home__description-arrow" src={arrow} alt="" />
             </div>
@@ -84,8 +84,11 @@ function Home() {
               Swipe to see some of the projects I've built.
             </h3>
             <Projects />
-            <Link to={"/work"} className="home__description-more">
-              More Projects →
+            <Link className="home__description-more" to={"/about"}>
+              More Projects
+              <div className="home__description__wrapper-arrow">
+                <img className="home__description-arrow" src={arrow} alt="" />
+              </div>
             </Link>
           </div>
         </div>

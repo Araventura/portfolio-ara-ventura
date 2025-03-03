@@ -25,8 +25,20 @@
 @keyframes showBottomText {
   0% {
     transform: translate3d(0, -100%, 0);
+    z-index: -1;
   }
   100% {
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes hideBottomText {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+    display: none;
+    z-index: -3;
   }
 }

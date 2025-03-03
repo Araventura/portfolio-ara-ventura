@@ -2,6 +2,12 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/fonts" as *;
 
+.contact-form {
+  position: relative;
+  transition: 2s;
+  animation: showBottomText 3s 0s forwards;
+}
+
 .form {
   &__container {
     display: flex;
