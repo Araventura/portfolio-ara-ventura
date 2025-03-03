@@ -17,8 +17,6 @@ function Home() {
   const [hideContact, setHideContact] = useState(true);
 
   const handleClick = (e) => {
-    console.log("current hideContact state", hideContact);
-
     if (e.target.id == "about") {
       setHideAbout(!hideAbout);
     }
