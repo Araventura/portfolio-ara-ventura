@@ -46,4 +46,10 @@
       color: black;
     }
   }
+
+  &__button.submitted {
+    background-color: #4caf50;
+    cursor: default;
+    color: white;
+  }
 }
