@@ -95,7 +95,7 @@ function Home() {
         <div id="contact" className="home__bottom-title" onClick={handleClick}>
           CONTACT
         </div>
-        <Form className="" hideContact={hideContact} />
+        <Form hideContact={hideContact} />
       </div>
     </div>
   );
