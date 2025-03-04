@@ -29,13 +29,13 @@ function About() {
           </div>
           <div className="about__skills">
             <h3 className="about__skills-title">Skills & Technologies</h3>
-            <h4 className="about__skills-tech">
-              HTML / CSS / SCSS / Sass / JavaScript / Python / Node / React /
-              Express / MySQL / Agile Development / DOM / API / Web APIs / AI
-              APIs & Plugins / User Authentication / OAuth / Heroku / GitHub /
-              Jest / REST APIs / Node.js / Figma / Git / GitHub / LLMs / NLP
-              Techniques / Prompt Engineering / WordPress
-            </h4>
+            {skillsData.map((i) => {
+              return (
+                <h4 key={i.key} className="about__skills-tech">
+                  ✓ {i.name}
+                </h4>
+              );
+            })}
           </div>
 
           <p className="about__text">

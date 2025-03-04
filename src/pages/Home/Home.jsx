@@ -84,7 +84,7 @@ function Home() {
               Swipe to see some of the projects I've built.
             </h3>
             <Projects />
-            <Link className="home__description-more" to={"/about"}>
+            <Link className="home__description-more" to={"/work"}>
               More Projects
               <div className="home__description__wrapper-arrow">
                 <img className="home__description-arrow" src={arrow} alt="" />
