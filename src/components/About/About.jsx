@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.scss";
 import { Link } from "react-router-dom";
+import profileImg from "../../assets/images/profile.jpg";
 
 function About() {
   return (
@@ -8,26 +9,30 @@ function About() {
       <div className="about__text-top">
         <div>
           <h1 className="about__title">About</h1>
+          <div className="about__wrapper">
+            <img className="about__image" src={profileImg} alt="" />
+          </div>
           <h2 className="about__subtitle">
-            I'm Ara. A software engineer, maker and problem solver.
+            Nice to see you, I'm Ara. A software engineer, maker and problem
+            solver.
           </h2>
         </div>
       </div>
       <div className="about__text-bottom">
         <div>
-          <h3 className="about__tech news">
-            Exciting news! I recently earned a certification in Artificial
-            Intelligence (AIC™), where I learned how to solve complex problems
-            with AI tools.
+          <h3 className="about__tech">
+            ✓ Most recent achievement: Certification in Artificial Intelligence
+            (AIC™)
           </h3>
-
-          <h4 className="about__tech">
-            HTML / CSS / SCSS / Sass / JavaScript / Python / Node / React /
-            Express / MySQL / Agile Development / DOM / API / Web APIs / AI APIs
-            & Plugins / User Authentication / OAuth / Heroku / GitHub / Jest /
-            REST APIs / Node.js / Figma / Git / GitHub / LLMs / NLP Techniques /
-            Prompt Engineering / WordPress
-          </h4>
+          <div className="about__skills">
+            <h4 className="about__skills-tech">
+              HTML / CSS / SCSS / Sass / JavaScript / Python / Node / React /
+              Express / MySQL / Agile Development / DOM / API / Web APIs / AI
+              APIs & Plugins / User Authentication / OAuth / Heroku / GitHub /
+              Jest / REST APIs / Node.js / Figma / Git / GitHub / LLMs / NLP
+              Techniques / Prompt Engineering / WordPress
+            </h4>
+          </div>
 
           <p className="about__text">
             After dedicating over six years to the dental field, I realized that
