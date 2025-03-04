@@ -2,7 +2,7 @@ import React from "react";
 import "./About.scss";
 import { Link } from "react-router-dom";
 import profileImg from "../../assets/images/profile.jpg";
-
+import skillsData from "../../data/skills.json";
 function About() {
   return (
     <div className="about">
@@ -13,18 +13,22 @@ function About() {
             <img className="about__image" src={profileImg} alt="" />
           </div>
           <h2 className="about__subtitle">
-            Nice to see you, I'm Ara. A software engineer, maker and problem
-            solver.
+            Nice to see you, I'm Ara. A Junior Software Engineer who specializes
+            in React, Express, MySQL and JavaScript.
           </h2>
         </div>
       </div>
       <div className="about__text-bottom">
         <div>
-          <h3 className="about__tech">
-            ✓ Most recent achievement: Certification in Artificial Intelligence
-            (AIC™)
-          </h3>
+          <div className="about__tech-backdrop">
+            <h4 className="about__tech-emoji">🏆</h4>
+            <h3 className="about__tech">
+              Most recent achievement: Certification in Artificial Intelligence
+              (AIC™) Nov 2024
+            </h3>
+          </div>
           <div className="about__skills">
+            <h3 className="about__skills-title">Skills & Technologies</h3>
             <h4 className="about__skills-tech">
               HTML / CSS / SCSS / Sass / JavaScript / Python / Node / React /
               Express / MySQL / Agile Development / DOM / API / Web APIs / AI

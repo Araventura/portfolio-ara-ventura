@@ -44,9 +44,35 @@
     padding-bottom: 16px;
     letter-spacing: 2px;
     margin-bottom: 0;
+    text-align: center;
+
+    &-emoji {
+      font-size: 16px;
+      text-align: center;
+      padding-top: 10px;
+    }
+
+    &-backdrop {
+      width: 100%;
+      background-color: rgb(255, 255, 255, 0.3);
+      border-radius: 4%;
+    }
 
     @include desktop {
       font-size: 14px;
+    }
+  }
+
+  &__skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+
+    &-title {
+      font-family: "Libre";
+      font-size: 16px;
+      margin-top: 16px;
     }
   }
 
