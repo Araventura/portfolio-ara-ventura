@@ -35,7 +35,7 @@ function Form(props) {
       </h4>
       <form ref={formRef} onSubmit={handleSubmit} className="form" id="form">
         <div className="form__container">
-          <span className="form__title">Contact Details</span>
+          <span className="form__title">Contact Details:</span>
 
           <input
             type="hidden"
@@ -69,7 +69,7 @@ function Form(props) {
             placeholder="Company (optional)"
           />
         </div>
-        <span className="form__title">Message</span>
+        <span className="form__title">Message:</span>
         <textarea
           className="form__textarea"
           name="message"
