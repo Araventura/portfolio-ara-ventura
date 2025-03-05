@@ -3,7 +3,6 @@ import "./Work.scss";
 import { Link } from "react-router-dom";
 import Arrow from "../../assets/icons/left-arrow.png";
 import "../../pages/Home/Home.scss";
-// json for work projects
 import projects from "../../data/work.json";
 
 //Swiper
@@ -17,7 +16,7 @@ function Work() {
   return (
     <div className="work">
       <Link to={"/"} className="back">
-        <img src={Arrow} alt="left arrow" /> back
+        <img className="back__arrow" src={Arrow} alt="left arrow" /> back
       </Link>
       <h2 className="work__title">WORK</h2>
       <p className="work__description">
@@ -59,7 +58,7 @@ function Work() {
         </Swiper>
       </ul>
 
-      <Link to={"/contact"}>
+      <Link className="work__button" to={"/contact"}>
         <button>Contact Me</button>
       </Link>
     </div>
