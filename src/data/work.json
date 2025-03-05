@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "images": "../../images/dentashift.png",
+    "title": "Denta Shift - Practice",
+    "description": "A Full Stack application using React, Node.js, Express, MySQL for the front-end and back-end. A web app created for dental professionals and dental offices to find each other."
+  },
+
+  {
+    "id": 2,
+    "video": "../../images/hackathon-winning.png",
+    "title": "Hackathon - Winning Project",
+    "description": "Front-end lead of a team of 4. A 24 hour hackathon sponsored by Telus with the aim of tackling the theme: Consumers are experiencing option paralysis. The solution: a feature with Artificial Intelligence that provides a list of shows that you may like based on an entry and where you can find them."
+  },
+
+  {
+    "id": 3,
+    "video": "../../images/mobile-tablet.png",
+    "title": "Instock - Practice",
+    "description": "An Inventory Management website that was built in collaboration with three of my peers using all we learned and adding MySQL, Knex.js, Jira and Gitflow best practices."
+  },
+
+  {
+    "id": 4,
+    "video": "../../images/purelyChic.png",
+    "title": "Purely Chic - Practice",
+    "description": "Lead of the front-end. Given 8 hours and a team of 3, were taked with building a full-stack application using React, Node.js and Express.js for the front-end and the back-end"
+  },
+
+  {
+    "id": 5,
+    "video": "../../images/hackathon.png",
+    "title": "Hackathon #1: Your fav quotes",
+    "description": "Joining a team of 2, we were tasked with building a functioning application in 4 hours using HTML, CSS/Sass, JS for the front-end, and Axios to pull data from an external API."
+  },
+
+  {
+    "id": 6,
+    "video": "../../images/bandsite.png",
+    "title": "BandSite",
+    "description": "A project with JS and axios to build a more interactive and dynamic page."
+  },
+
+  {
+    "id": 7,
+    "video": "../../images/coffeeshop.png",
+    "title": "Coffee Shop",
+    "description": "Using HTML, CSS/Sass + BEM naming conventions, I created a coffee shop landing and menu page."
+  }
+]
