@@ -3,7 +3,7 @@
 @use "../../styles/fonts" as *;
 
 .contact {
-  padding: 100px 32px;
+  padding: 0 32px;
 
   @include tablet {
     padding-left: 100px;
@@ -31,5 +31,12 @@
     @include desktop {
       font-size: 180px;
     }
+  }
+
+  &__wrapper {
+    background-color: $primary-color-background;
+    position: relative;
+    z-index: 3;
+    padding-top: 100px;
   }
 }

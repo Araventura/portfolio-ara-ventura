@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import linkedinImg from "../../assets/icons/linkedin.svg";
 import githubImg from "../../assets/icons/github.svg";
 import emailImg from "../../assets/icons/mail.svg";
+import Contact from "../Contact/Contact";
 
 function Header() {
   return (
@@ -23,12 +24,7 @@ function Header() {
           <Link to="https://github.com/Araventura" className="header__link">
             <img className="header__logo" src={githubImg} alt="GitHub logo" />
           </Link>
-          <Link
-            onClick={() => {
-              window.location = `mailto:araventura-contact@gmail.com`;
-            }}
-            className="header__link"
-          >
+          <Link to={"/contact"} className="header__link">
             <img className="header__logo" src={emailImg} alt="" />
           </Link>
         </div>
