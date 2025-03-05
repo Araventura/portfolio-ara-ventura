@@ -145,9 +145,10 @@
       position: relative;
       z-index: 2;
       transition: 1s;
-      animation: showBottomText 3s;
+      animation: showBottomText 1.5s;
       animation-delay: 0s;
       animation-fill-mode: forwards;
+      background-color: $primary-color-background;
 
       &__img {
         width: 300px;

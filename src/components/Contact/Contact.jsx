@@ -1,7 +1,5 @@
 import React from "react";
 import "./Contact.scss";
-import { Link } from "react-router-dom";
-import Arrow from "../../assets/icons/left-arrow.png";
 import Form from "../Form/Form";
 
 function Contact() {
