@@ -57,8 +57,8 @@ function Projects() {
                   JavaScript, React, MySQL, Express, Rest APIs
                 </h4>
                 <h4 className="home__list-description">
-                  A web application where dentists can find a dental
-                  professional based on their offices needs.
+                  A web application where dentists can find dental professionals
+                  based on their offices needs.
                 </h4>
               </div>
             </li>

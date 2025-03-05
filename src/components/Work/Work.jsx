@@ -2,13 +2,16 @@ import React from "react";
 import "./Work.scss";
 import { Link } from "react-router-dom";
 import Arrow from "../../assets/icons/left-arrow.png";
-import videos from "../../videos/videos.json";
-import aiOne from "../../assets/images/ai-1.png";
-import aiTwo from "../../assets/images/ai-2.png";
-import aiThree from "../../assets/images/ai-3.png";
-import aiFour from "../../assets/images/ai-4.png";
-import aiFive from "../../assets/images/ai-5.png";
-import aiSix from "../../assets/images/ai-6.png";
+import "../../pages/Home/Home.scss";
+// json for work projects
+import projects from "../../data/work.json";
+
+//Swiper
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Mousewheel, Keyboard } from "swiper/modules";
 
 function Work() {
   return (
@@ -18,126 +21,44 @@ function Work() {
       </Link>
       <h2 className="work__title">WORK</h2>
       <p className="work__description">
-        This is a showcase of my work. The world is constantly evolving and so
-        am I. I'm learning and gaining new skills everyday.
+        This is a showcase of my work. Swipe to see my projects. Enjoy!
       </p>
 
-      {/* new carousel */}
-
-      <div
-        id="carouselExampleIndicators"
-        className="carousel slide photo__carousel"
-      >
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="5"
-            aria-label="Slide 6"
-          ></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img className="d-block w-100" src={aiOne} alt="First slide" />
-          </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src={aiTwo} alt="Second slide" />
-          </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src={aiThree} alt="Third slide" />
-          </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src={aiFour} alt="Fourth slide" />
-          </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src={aiFive} alt="Fifth slide" />
-          </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src={aiSix} alt="Six slide" />
-          </div>
-        </div>
-        <button
-          className="carousel-control-prev carousel__button"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
+      {/* -Swiper- */}
+      <ul className="home__list">
+        <Swiper
+          spaceBetween={2}
+          slidesPerView={1}
+          cssMode={true}
+          navigation={true}
+          mousewheel={true}
+          keyboard={true}
+          modules={[Navigation, Mousewheel, Keyboard]}
+          className="swiper"
         >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next carousel__button"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
-      {/* end of carousel */}
+          {projects.map((project) => (
+            <SwiperSlide>
+              <li key={project.id} className="home__list-item">
+                <img
+                  className="home__bottom-wrapper__img"
+                  src={project.image}
+                  alt="A mobile and tablet simulation"
+                />
+                <div className="home__list-wrapper">
+                  <h3 className="home__list-title">{project.title}</h3>
+                  <h4 className="home__list-description">
+                    {project.technologies}
+                  </h4>
+                  <h4 className="home__list-description">
+                    {project.description}
+                  </h4>
+                </div>
+              </li>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </ul>
 
-      <div className="cards">
-        {videos.map((project) => (
-          <div key={project.id} className="card">
-            <div className="card__video">
-              <img src="" alt="" className="thumbnail" />
-              <iframe
-                className="video"
-                src={project.video}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-            </div>
-            <div className="card-info">
-              <h4 className="card__title">{project.title}</h4>
-              <p className="card__year">{project.date}</p>
-              <p className="card__description">{project.description}</p>
-            </div>
-          </div>
-        ))}
-      </div>
       <Link to={"/contact"}>
         <button>Contact Me</button>
       </Link>
