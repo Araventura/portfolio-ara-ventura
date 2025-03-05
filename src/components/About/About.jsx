@@ -40,7 +40,7 @@ function About() {
             </div>
           </div>
           <Link to={"/contact"}>
-            <button>Contact Me</button>
+            <button className="about__button">Contact Me</button>
           </Link>
         </div>
       </div>
