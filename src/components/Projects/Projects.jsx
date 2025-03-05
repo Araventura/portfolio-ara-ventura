@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Projects.scss";
 import workImage from "../../assets/images/mobile-tablet.png";
 import dentaShiftImage from "../../assets/images/dentashift.png";
 import purelyChic from "../../assets/images/purelyChic.png";
-
 // Swiper
 import "swiper/css";
 import "swiper/css/navigation";

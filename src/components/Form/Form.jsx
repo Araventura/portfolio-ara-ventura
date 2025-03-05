@@ -1,7 +1,7 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, forwardRef } from "react";
 import "./Form.scss";
 
-function Form(props) {
+const Form = forwardRef((props, contactSectionRef) => {
   const formRef = useRef(null); // to access the form data inside function
   const [submitted, setSubmitted] = useState(false);
 
@@ -77,6 +77,7 @@ function Form(props) {
           required
         ></textarea>
         <button
+          ref={contactSectionRef}
           className={`form__button ${submitted ? "submitted" : ""}`}
           type="submit"
           disabled={submitted}
@@ -86,6 +87,6 @@ function Form(props) {
       </form>
     </div>
   );
-}
+});
 
 export default Form;

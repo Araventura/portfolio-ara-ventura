@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useRef } from "react";
 import "./Home.scss";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/av-logo.png";
@@ -16,17 +16,38 @@ function Home() {
   const [hideWork, setHideWork] = useState(true);
   const [hideContact, setHideContact] = useState(true);
 
+  const aboutSection = useRef(null);
+  const workSection = useRef(null);
+  const contactSection = useRef(null);
+
   const handleClick = (e) => {
     if (e.target.id == "about") {
       setHideAbout(!hideAbout);
+      window.scrollTo({
+        top: aboutSection.current.offsetTop,
+        behavior: "smooth",
+      });
     }
 
     if (e.target.id == "work") {
       setHideWork(!hideWork);
+
+      setTimeout(() => {
+        window.scrollTo({
+          top: workSection.current.offsetTop + workSection.current.offsetHeight,
+          behavior: "smooth",
+        });
+      }, 1000);
     }
 
     if (e.target.id == "contact") {
       setHideContact(!hideContact);
+      setTimeout(() => {
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: "smooth",
+        });
+      }, 1100);
     }
   };
 
@@ -73,7 +94,7 @@ function Home() {
             </div>
           </Link>
         </div>
-        <div className="home__section">
+        <div ref={aboutSection} className="home__section">
           <div className="home__link">
             <div id="work" className="home__bottom-title" onClick={handleClick}>
               WORK
@@ -83,8 +104,12 @@ function Home() {
             <h3 className="home__subtitle">
               Swipe to see some of the projects I've built.
             </h3>
-            <Projects />
-            <Link className="home__description-more" to={"/work"}>
+            <Projects handleClick={handleClick} />
+            <Link
+              ref={workSection}
+              className="home__description-more"
+              to={"/work"}
+            >
               More Projects
               <div className="home__description__wrapper-arrow">
                 <img className="home__description-arrow" src={arrow} alt="" />
@@ -95,7 +120,7 @@ function Home() {
         <div id="contact" className="home__bottom-title" onClick={handleClick}>
           CONTACT
         </div>
-        <Form hideContact={hideContact} />
+        <Form ref={contactSection} hideContact={hideContact} />
       </div>
     </div>
   );
