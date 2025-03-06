@@ -72,6 +72,10 @@
         text-decoration: underline;
         color: white;
       }
+
+      @include tablet {
+        font-size: 14px;
+      }
     }
 
     &__wrapper-arrow {
@@ -129,6 +133,7 @@
         text-decoration: none;
         color: $primary-color-white;
         opacity: 1;
+        cursor: pointer;
       }
     }
 
@@ -154,6 +159,10 @@
       animation: showBottomText 0.5s 0s forwards;
       background-color: $primary-color-background;
       z-index: 4;
+
+      @include tablet {
+        width: 420px;
+      }
     }
   }
 
@@ -179,6 +188,10 @@
     font-size: 12px;
     font-style: italic;
     color: white;
+
+    @include tablet {
+      font-size: 14px;
+    }
   }
 
   &__list {
@@ -230,8 +243,4 @@
     position: relative;
     z-index: 4;
   }
-}
-
-.hidden {
-  animation: hideBottomText 0.1s 0s forwards;
 }
