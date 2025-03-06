@@ -165,6 +165,10 @@
     justify-content: center;
     margin-right: 55px;
 
+    @include tablet {
+      width: 270px;
+    }
+
     &-logo {
       height: 500px;
       max-width: none;
