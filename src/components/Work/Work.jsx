@@ -15,9 +15,6 @@ import { Navigation, Mousewheel, Keyboard } from "swiper/modules";
 function Work() {
   return (
     <div className="work">
-      <Link to={"/"} className="back">
-        <img className="back__arrow" src={Arrow} alt="left arrow" /> back
-      </Link>
       <h2 className="work__title">WORK</h2>
       <p className="work__description">
         This is a showcase of my latest projects. Swipe to see them. Enjoy!

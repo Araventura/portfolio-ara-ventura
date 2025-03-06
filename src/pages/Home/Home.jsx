@@ -28,17 +28,6 @@ function Home() {
       });
     }
 
-    // if (e.target.id == "work") {
-    //   setHideWork(!hideWork);
-
-    //   setTimeout(() => {
-    //     window.scrollTo({
-    //       top: workSection.current.offsetTop + workSection.current.offsetHeight,
-    //       behavior: "smooth",
-    //     });
-    //   }, 1000);
-    // }
-
     if (e.target.id == "contact") {
       setHideContact(!hideContact);
       setTimeout(() => {

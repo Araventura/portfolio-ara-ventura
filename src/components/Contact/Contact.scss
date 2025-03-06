@@ -4,6 +4,8 @@
 
 .contact {
   padding: 0 32px;
+  animation: showWork 1s;
+  transition: 1s;
 
   @include tablet {
     padding-left: 100px;
