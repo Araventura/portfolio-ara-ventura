@@ -6,7 +6,7 @@ function Contact() {
   return (
     <div className="contact">
       <div className="contact__wrapper">
-        <h1 className="contact__title">Hello.</h1>
+        <h1 className="contact__title">CONTACT</h1>
       </div>
       <div className="contact__form-wrapper">
         <Form />

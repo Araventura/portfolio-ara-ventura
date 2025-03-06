@@ -2,15 +2,6 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/fonts" as *;
 
-@keyframes bounce {
-  from {
-    margin-left: 16px;
-  }
-  to {
-    margin-right: 0;
-  }
-}
-
 .home {
   display: flex;
   flex-direction: column;
