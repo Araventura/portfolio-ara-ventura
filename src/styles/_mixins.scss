@@ -52,6 +52,15 @@
   }
 }
 
+@keyframes bounce {
+  from {
+    margin-left: 16px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
 .swiper {
   --swiper-theme-color: white;
 }

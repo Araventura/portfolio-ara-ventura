@@ -4,7 +4,6 @@ import "./Home.scss";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/av-logo.png";
 import arrow from "../../assets/icons/left-arrow.png";
-import Form from "../../components/Form/Form.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -12,12 +11,7 @@ AOS.init();
 
 function Home() {
   const [hideAbout, setHideAbout] = useState(true);
-  const [hideWork, setHideWork] = useState(true);
-  const [hideContact, setHideContact] = useState(true);
-
   const aboutSection = useRef(null);
-  const workSection = useRef(null);
-  const contactSection = useRef(null);
 
   const handleClick = (e) => {
     if (e.target.id == "about") {
@@ -26,16 +20,6 @@ function Home() {
         top: aboutSection.current.offsetTop,
         behavior: "smooth",
       });
-    }
-
-    if (e.target.id == "contact") {
-      setHideContact(!hideContact);
-      setTimeout(() => {
-        window.scrollTo({
-          top: document.body.scrollHeight,
-          behavior: "smooth",
-        });
-      }, 1100);
     }
   };
 
@@ -89,10 +73,9 @@ function Home() {
             </div>
           </Link>
         </div>
-        <div id="contact" className="home__bottom-title" onClick={handleClick}>
+        <Link to={"/contact"} id="contact" className="home__bottom-title">
           CONTACT
-        </div>
-        <Form ref={contactSection} hideContact={hideContact} />
+        </Link>
       </div>
     </div>
   );
