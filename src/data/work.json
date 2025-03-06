@@ -4,7 +4,7 @@
     "image": "../../src/assets/images/dentashift.png",
     "title": "Denta Shift - Practice",
     "technologies": "React, Node.js, Express, MySQL",
-    "description": "A web application where dentists can find dental professionals based on their offices' needs."
+    "description": "A web application where dentists can find dental professionals based on their offices needs."
   },
 
   {
@@ -50,8 +50,8 @@
   {
     "id": 7,
     "image": "../../src/assets/images/hackathon1.png",
-    "title": "Hackathon #1: Your fav quotes",
+    "title": "Hackathon: Your fav quotes",
     "technologies": "HTML, Sass, JavaScript, Axios, APIs",
-    "description": "A web application where you can get quotes from a fun character of a Sitcom with three external APIs."
+    "description": "A team of two and a short amount of time we created a web application where you can get quotes from a fun character of a Sitcom with three external APIs."
   }
 ]
