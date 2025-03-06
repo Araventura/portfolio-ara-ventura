@@ -4,7 +4,6 @@ import "./Home.scss";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/av-logo.png";
 import arrow from "../../assets/icons/left-arrow.png";
-import Projects from "../../components/Projects/Projects.jsx";
 import Form from "../../components/Form/Form.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -29,16 +28,16 @@ function Home() {
       });
     }
 
-    if (e.target.id == "work") {
-      setHideWork(!hideWork);
+    // if (e.target.id == "work") {
+    //   setHideWork(!hideWork);
 
-      setTimeout(() => {
-        window.scrollTo({
-          top: workSection.current.offsetTop + workSection.current.offsetHeight,
-          behavior: "smooth",
-        });
-      }, 1000);
-    }
+    //   setTimeout(() => {
+    //     window.scrollTo({
+    //       top: workSection.current.offsetTop + workSection.current.offsetHeight,
+    //       behavior: "smooth",
+    //     });
+    //   }, 1000);
+    // }
 
     if (e.target.id == "contact") {
       setHideContact(!hideContact);
@@ -95,27 +94,11 @@ function Home() {
           </Link>
         </div>
         <div ref={aboutSection} className="home__section">
-          <div className="home__link">
-            <div id="work" className="home__bottom-title" onClick={handleClick}>
+          <Link to={"/work"} className="home__link">
+            <div id="work" className="home__bottom-title">
               WORK
             </div>
-          </div>
-          <div className={`home__bottom-wrapper ${hideWork ? "hidden" : ""}`}>
-            <h3 className="home__subtitle">
-              Swipe to see some of the projects I've built.
-            </h3>
-            <Projects handleClick={handleClick} />
-            <Link
-              ref={workSection}
-              className="home__description-more"
-              to={"/work"}
-            >
-              More Projects
-              <div className="home__description__wrapper-arrow">
-                <img className="home__description-arrow" src={arrow} alt="" />
-              </div>
-            </Link>
-          </div>
+          </Link>
         </div>
         <div id="contact" className="home__bottom-title" onClick={handleClick}>
           CONTACT

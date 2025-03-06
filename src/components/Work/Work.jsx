@@ -20,7 +20,7 @@ function Work() {
       </Link>
       <h2 className="work__title">WORK</h2>
       <p className="work__description">
-        This is a showcase of my work. Swipe to see my projects. Enjoy!
+        This is a showcase of my latest projects. Swipe to see them. Enjoy!
       </p>
 
       {/* -Swiper- */}
@@ -57,10 +57,11 @@ function Work() {
           ))}
         </Swiper>
       </ul>
-
-      <Link className="work__button" to={"/contact"}>
-        <button>Contact Me</button>
-      </Link>
+      <div>
+        <Link to={"/contact"}>
+          <button className="work__button">Contact Me</button>
+        </Link>
+      </div>
     </div>
   );
 }
