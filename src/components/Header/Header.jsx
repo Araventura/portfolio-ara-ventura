@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import linkedinImg from "../../assets/icons/linkedin.svg";
 import githubImg from "../../assets/icons/github.svg";
 import emailImg from "../../assets/icons/mail.svg";
-import Contact from "../Contact/Contact";
 
 function Header() {
   return (
