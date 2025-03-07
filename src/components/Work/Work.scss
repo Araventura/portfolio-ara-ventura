@@ -36,6 +36,10 @@
 
   &__button {
     width: 100%;
+
+    @include tablet {
+      width: 600px;
+    }
   }
 
   .back {
@@ -48,6 +52,10 @@
 
   &__list {
     padding-left: 0;
+
+    @include tablet {
+      width: 600px;
+    }
 
     &-item {
       list-style: none;
@@ -98,6 +106,12 @@
         width: 300px;
         padding-bottom: 10px;
         padding-left: 10px;
+
+        @include tablet {
+          width: 400px;
+          height: 370px;
+          padding-bottom: 0;
+        }
       }
     }
   }

@@ -20,7 +20,7 @@ function Work() {
       </p>
 
       {/* -Swiper- */}
-      <ul className="home__list">
+      <ul className="work__list">
         <Swiper
           spaceBetween={2}
           slidesPerView={1}
