@@ -7,6 +7,25 @@
 }
 
 .form {
+  &__email {
+    font-weight: 600;
+    font-size: 14px;
+
+    &-me {
+      font-size: 14px;
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__reach {
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;

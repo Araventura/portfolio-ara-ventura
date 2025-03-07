@@ -27,9 +27,9 @@ const Form = forwardRef((props, contactSectionRef) => {
 
   return (
     <div className={`contact-form ${props.hideContact ? "hidden" : ""}`}>
-      <h3 className="home__email">Email me:</h3>
-      <h4 className="home__email-me">ara.venturafitch@gmail.com</h4>
-      <h4 className="home__reach">
+      <h3 className="form__email">Email me:</h3>
+      <h4 className="form__email-me">ara.venturafitch@gmail.com</h4>
+      <h4 className="form__reach">
         I can be reached by Email, LinkedIn or send me a message here - I'd love
         to connect with you!
       </h4>
