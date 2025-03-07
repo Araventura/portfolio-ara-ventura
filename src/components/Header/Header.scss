@@ -20,9 +20,7 @@
   }
 
   @include desktop {
-    max-width: 800px;
-    bottom: -360px;
-    left: -380px;
+    min-width: 1280px;
   }
 
   &__left {
