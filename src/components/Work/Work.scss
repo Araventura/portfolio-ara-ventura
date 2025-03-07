@@ -18,12 +18,20 @@
     padding: 26px 0;
     margin-bottom: 0;
     font-family: "Libre";
+
+    @include tablet {
+      font-size: 80px;
+    }
   }
 
   &__description {
     max-width: 800px;
     font-size: 12px;
     opacity: 0.7;
+
+    @include tablet {
+      font-size: 14px;
+    }
   }
 
   &__button {
@@ -35,6 +43,62 @@
       width: 15px;
       opacity: 0.7;
       margin-right: 8px;
+    }
+  }
+
+  &__list {
+    padding-left: 0;
+
+    &-item {
+      list-style: none;
+
+      @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: $primary-color-background;
+    }
+
+    &-title {
+      font-size: 13px;
+      margin: 0;
+    }
+
+    &-description {
+      font-size: 10px;
+      opacity: 0.7;
+      text-align: center;
+      margin: 5px 0 0;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-wrapper {
+      position: relative;
+      z-index: 2;
+      transition: 1s;
+      animation: showBottomText 1s;
+      animation-delay: 0s;
+      animation-fill-mode: forwards;
+      background-color: $primary-color-background;
+
+      &__img {
+        width: 300px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+      }
     }
   }
 }

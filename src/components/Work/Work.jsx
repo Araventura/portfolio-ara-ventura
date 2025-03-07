@@ -1,7 +1,6 @@
 import React from "react";
 import "./Work.scss";
 import { Link } from "react-router-dom";
-import Arrow from "../../assets/icons/left-arrow.png";
 import "../../pages/Home/Home.scss";
 import projects from "../../data/work.json";
 
@@ -34,18 +33,18 @@ function Work() {
         >
           {projects.map((project) => (
             <SwiperSlide>
-              <li key={project.id} className="home__list-item">
+              <li key={project.id} className="work__list-item">
                 <img
-                  className="home__bottom-wrapper__img"
+                  className="work__bottom-wrapper__img"
                   src={project.image}
                   alt="A mobile and tablet simulation"
                 />
-                <div className="home__list-wrapper">
-                  <h3 className="home__list-title">{project.title}</h3>
-                  <h4 className="home__list-description">
+                <div className="work__list-wrapper">
+                  <h3 className="work__list-title">{project.title}</h3>
+                  <h4 className="work__list-description">
                     {project.technologies}
                   </h4>
-                  <h4 className="home__list-description">
+                  <h4 className="work__list-description">
                     {project.description}
                   </h4>
                 </div>
