@@ -29,7 +29,7 @@ function Header() {
         </div>
       </div>
       <div className="header__right">
-        <Link to={"/"} className="header__year">
+        <Link to={"/"} className="header__home">
           HOME
         </Link>
       </div>

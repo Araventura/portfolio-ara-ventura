@@ -26,10 +26,6 @@
   &__left {
     display: flex;
     align-items: center;
-
-    @include tablet {
-      flex-direction: row-reverse;
-    }
   }
 
   &__socials {
@@ -38,11 +34,6 @@
 
   &__link {
     padding-left: 15px;
-
-    &:hover {
-      text-decoration: overline;
-      color: $primary-color-white;
-    }
   }
 
   &__logo {
@@ -54,9 +45,13 @@
     align-items: center;
   }
 
-  &__year {
+  &__home {
     margin: 0;
     font-size: 12px;
     letter-spacing: 4px;
+
+    &:hover {
+      text-decoration: overline;
+    }
   }
 }
