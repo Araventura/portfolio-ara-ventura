@@ -11,9 +11,17 @@
     font-weight: 600;
     font-size: 14px;
 
+    @include desktop {
+      font-size: 16px;
+    }
+
     &-me {
       font-size: 14px;
       opacity: 0.7;
+
+      @include desktop {
+        font-size: 16px;
+      }
 
       &:hover {
         opacity: 1;
@@ -24,6 +32,10 @@
   &__reach {
     font-size: 12px;
     opacity: 0.7;
+
+    @include desktop {
+      font-size: 14px;
+    }
   }
 
   &__container {
@@ -36,6 +48,10 @@
     display: flex;
     width: 100%;
     font-size: 14px;
+
+    @include desktop {
+      font-size: 15px;
+    }
   }
 
   &__input,

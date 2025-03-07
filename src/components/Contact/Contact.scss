@@ -15,11 +15,6 @@
     align-items: start;
   }
 
-  @include desktop {
-    padding-left: 180px;
-    padding-top: 180px;
-  }
-
   &__title {
     font-family: "Libre";
     font-size: 50px;
@@ -31,7 +26,7 @@
     }
 
     @include desktop {
-      font-size: 180px;
+      font-size: 95px;
     }
   }
 

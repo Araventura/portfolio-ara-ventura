@@ -53,7 +53,7 @@ function Work() {
           ))}
         </Swiper>
       </ul>
-      <div className="work__wrapper-button">
+      <div className="work__wrapper">
         <Link to={"/contact"}>
           <button className="work__button">Contact Me</button>
         </Link>
