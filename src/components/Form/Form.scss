@@ -1,0 +1,98 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/fonts" as *;
+
+.contact-form {
+  position: relative;
+}
+
+.form {
+  &__email {
+    font-weight: 600;
+    font-size: 14px;
+
+    @include desktop {
+      font-size: 16px;
+    }
+
+    &-me {
+      font-size: 14px;
+      opacity: 0.7;
+
+      @include desktop {
+        font-size: 16px;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__reach {
+    font-size: 12px;
+    opacity: 0.7;
+
+    @include desktop {
+      font-size: 14px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+  }
+
+  &__title {
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+
+    @include desktop {
+      font-size: 15px;
+    }
+  }
+
+  &__input,
+  &__textarea {
+    font-size: 12px;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    background-color: inherit;
+    border-radius: 12px;
+    color: rgb(255, 255, 255, 0.7);
+
+    &::placeholder {
+      color: rgb(255, 255, 255, 0.4);
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+  }
+
+  &__button {
+    width: 100%;
+    background-color: inherit;
+    border: 1px solid rgb(255, 255, 255, 0.7);
+    color: white;
+    font-weight: 700;
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  &__button.submitted {
+    background-color: #4caf50;
+    cursor: default;
+    color: white;
+  }
+}
+
+.hidden {
+  animation: hideBottomText 0.1s 0s forwards;
+}

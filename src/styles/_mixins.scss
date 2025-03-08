@@ -25,8 +25,57 @@
 @keyframes showBottomText {
   0% {
     transform: translate3d(0, -100%, 0);
+    z-index: -2;
   }
   100% {
     transform: translate3d(0, 0, 0);
   }
+}
+
+@keyframes hideBottomText {
+  0% {
+    transform: translate3d(0, 0, 0);
+    display: none;
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+    display: none;
+    z-index: -3;
+  }
+}
+
+@keyframes showWork {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounce {
+  from {
+    margin-left: 16px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+.swiper {
+  --swiper-theme-color: white;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  margin-left: 15px;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  margin-right: 20px;
+}
+
+.hidden {
+  animation: hideBottomText 0.1s 0s forwards;
 }

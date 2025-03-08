@@ -3,7 +3,9 @@
 @use "../../styles/fonts" as *;
 
 .contact {
-  padding: 100px 32px;
+  padding: 0 16px;
+  animation: showWork 1s;
+  transition: 1s;
 
   @include tablet {
     padding-left: 100px;
@@ -14,59 +16,28 @@
   }
 
   @include desktop {
-    padding-left: 180px;
-    padding-top: 180px;
+    align-items: center;
   }
 
   &__title {
     font-family: "Libre";
-    font-size: 80px;
+    font-size: 50px;
+    margin-bottom: 30px;
+    z-index: 4;
 
     @include tablet {
-      font-size: 120px;
+      font-size: 80px;
     }
 
     @include desktop {
-      font-size: 180px;
+      font-size: 95px;
     }
   }
 
-  &__subtitle {
-    font-size: 13px;
-    margin-bottom: 30px;
-
-    @include tablet {
-      font-size: 16px;
-    }
-  }
-
-  &__email {
-    font-size: 13px;
-    margin-bottom: 0;
-
-    @include tablet {
-      font-size: 16px;
-    }
-
-    & :hover {
-      text-decoration: none;
-      color: $primary-color-white;
-      opacity: 0.5;
-    }
-  }
-
-  &__socials {
-    font-size: 13px;
-
-    @include tablet {
-      font-size: 16px;
-      margin-bottom: 60px;
-    }
-
-    & :hover {
-      text-decoration: none;
-      color: $primary-color-white;
-      opacity: 0.5;
-    }
+  &__wrapper {
+    background-color: $primary-color-background;
+    position: relative;
+    z-index: 3;
+    padding-top: 70px;
   }
 }

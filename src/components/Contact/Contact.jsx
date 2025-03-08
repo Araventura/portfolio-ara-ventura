@@ -1,33 +1,16 @@
 import React from "react";
 import "./Contact.scss";
-import { Link } from "react-router-dom";
-import Arrow from "../../assets/icons/left-arrow.png";
+import Form from "../Form/Form";
 
 function Contact() {
   return (
     <div className="contact">
-      <h1 className="contact__title">Hello.</h1>
-      <h4 className="contact__subtitle">
-        Are looking to collaborate or hire me? Get in touch.
-      </h4>
-      <p className="contact__email">
-        Email:{" "}
-        <Link
-          onClick={() => {
-            window.location = `mailto:araventura-contact@gmail.com`;
-          }}
-        >
-          araventura.contact@gmail.com
-        </Link>
-      </p>
-      <p className="contact__socials">
-        On the Internet:{" "}
-        <Link to="https://www.linkedin.com/in/ara-ventura/">LinkedIn</Link> /{" "}
-        <Link to="https://github.com/Araventura">GitHub</Link>
-      </p>
-      <Link to={"/"} className="back">
-        <img src={Arrow} alt="left arrow" /> back
-      </Link>
+      <div className="contact__wrapper">
+        <h1 className="contact__title">CONTACT</h1>
+      </div>
+      <div className="contact__form-wrapper">
+        <Form />
+      </div>
     </div>
   );
 }

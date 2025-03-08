@@ -3,48 +3,46 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
-  margin: 16px 0;
+  justify-content: center;
 
-  @include tablet {
-    transform: rotate(-90deg);
-    flex-direction: row-reverse;
-    position: relative;
-    bottom: -330px;
-    left: -330px;
-    max-width: 700px;
-  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: $primary-color-background;
+    width: 100%;
+    padding: 20px 8px 12px;
+    z-index: 100;
 
-  @include desktop {
-    max-width: 800px;
-    bottom: -360px;
-    left: -380px;
+    @include tablet {
+      padding-left: 80px;
+      padding-right: 80px;
+      min-width: 700px;
+      max-width: 800px;
+    }
+
+    @include desktop {
+      max-width: 1280px;
+    }
   }
 
   &__left {
     display: flex;
     align-items: center;
+  }
 
-    @include tablet {
-      flex-direction: row-reverse;
-    }
+  &__socials {
+    display: flex;
   }
 
   &__link {
-    font-size: 12px;
-    padding: 0 15px;
-
-    &:hover {
-      text-decoration: overline;
-      color: $primary-color-white;
-    }
+    padding-left: 15px;
   }
 
-  &__line {
-    border: 1px solid $primary-color-white;
-    height: 2px;
-    width: 60px;
-    margin-left: 10px;
+  &__logo {
+    width: 15px;
   }
 
   &__right {
@@ -52,9 +50,13 @@
     align-items: center;
   }
 
-  &__year {
+  &__home {
     margin: 0;
     font-size: 12px;
     letter-spacing: 4px;
+
+    &:hover {
+      text-decoration: overline;
+    }
   }
 }
