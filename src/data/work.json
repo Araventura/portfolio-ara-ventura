@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "../../src/assets/images/dentashift.png",
+    "image": "img1",
     "title": "Denta Shift - Practice",
     "technologies": "React, Node.js, Express, MySQL",
     "description": "A web application where dentists can find dental professionals based on their offices needs."
