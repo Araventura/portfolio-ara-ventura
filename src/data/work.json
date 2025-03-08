@@ -37,21 +37,5 @@
     "title": "Coffee Shop - Practice",
     "technologies": "HTML, Sass, BEM naming conventions ",
     "description": "A website built for a coffee shop, highlighting their menu and producs."
-  },
-
-  {
-    "id": 6,
-    "image": "../../src/assets/images/hackathon-winning.png",
-    "title": "Hackathon - Winning Project",
-    "technologies": "",
-    "description": "Front-end lead of a team of 4. A 24 hour hackathon sponsored by Telus with the aim of tackling the theme: Consumers are experiencing option paralysis. The solution: a feature with Artificial Intelligence that provides a list of shows that you may like based on an entry and where you can find them."
-  },
-
-  {
-    "id": 7,
-    "image": "../../src/assets/images/hackathon1.png",
-    "title": "Hackathon: Your fav quotes",
-    "technologies": "HTML, Sass, JavaScript, Axios, APIs",
-    "description": "A team of two and a short amount of time we created a web application where you can get quotes from a fun character of a Sitcom with three external APIs."
   }
 ]

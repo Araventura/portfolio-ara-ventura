@@ -15,6 +15,10 @@
     align-items: start;
   }
 
+  @include desktop {
+    align-items: center;
+  }
+
   &__title {
     font-family: "Libre";
     font-size: 50px;
